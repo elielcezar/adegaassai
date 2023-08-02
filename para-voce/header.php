@@ -51,14 +51,14 @@
               <li><a href="https://megamidiagroup.com.br/adegaassai/para-voce" class="active">Home <strong>Para Você</strong></a></li>
               <li><a href="https://megamidiagroup.com.br/adegaassai/para-seu-negocio/">Home <strong>Para Seu Negócio</strong></a></li>
             </ul>
-            <?php wp_nav_menu(array('theme_location' => 'main-menu')); ?>        
+            
         </nav>       
       
         <h1 class="title"><a href="<?php echo site_url(); ?>"><?php echo get_bloginfo( 'name' ); ?></a></h1>
 
         <nav class="right">
             <ul>
-              <li><a href="<?php echo site_url(); ?>/indicacao-do-sommelier/">Indicação do <strong>Sommelier</strong></a></li>
+              <!--li><a href="<?php echo site_url(); ?>/indicacao-do-sommelier/">Indicação do <strong>Sommelier</strong></a></li-->
               <li><a href="<?php echo site_url(); ?>/vitrine-do-fornecedor/">Vitrine do <strong>Fornecedor</strong></a></li>
               <li><a href="<?php echo site_url(); ?>/cadastre-se" class="btn">Cadastre-se</a></li>
             </ul>            

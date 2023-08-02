@@ -20,42 +20,23 @@
 
 <div id="main">
   <div class="container">
-    <div class="content">  
-
-    <h2><?php the_title(); ?></h2>
-
-    <div class="chamada">
-      <p><?php the_field('chamada'); ?></p>
-    </div>
-    
-    <?php the_content(); ?>
-
-    <div class="fornecedores">
-        <h2>Vitrine do Fornecedor</h2>
-        <div class="carrossel">
-        <?php
-            $loop = new WP_Query(array(
-              'post_type' => 'fornecedor',        
-              'posts_per_page' => -1,
-              'orderby' => 'rand'
-            ));
-            if ($loop->have_posts()) :
-              while ($loop->have_posts()) : $loop->the_post(); ?>
-            
-            <div class="item"><?php the_post_thumbnail('thumb-noticia'); ?></div>        
-
-            <?php endwhile;
-            endif;
-            wp_reset_postdata();
-            ?>
-        </div>
-      </div>
-    
-    </div>
-    
-    <div class="sidebar">
+  <div class="sidebar">
       <?php get_template_part( 'cadastrese' ); ?>     
     </div>
+
+    
+    <div class="content">  
+
+      <h2><?php the_title(); ?></h2>
+
+      <div class="chamada">
+        <p><?php the_field('chamada'); ?></p>
+      </div>
+      
+      <?php the_content(); ?>    
+    
+    </div>
+    
 
   </div>
 </div>

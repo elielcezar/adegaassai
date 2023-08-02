@@ -40,6 +40,10 @@ Template Name: Dica do Sommelier
 
 <div id="main">
   <div class="container">
+        
+  <div class="sidebar">
+      <?php get_template_part( 'cadastrese' ); ?>     
+    </div>
     <div class="content">  
       
         <div class="semana">
@@ -150,10 +154,7 @@ Template Name: Dica do Sommelier
         
 
     </div>
-    
-    <div class="sidebar">
-      <?php get_template_part( 'cadastrese' ); ?>     
-    </div>
+
 
 </div>
 </div>

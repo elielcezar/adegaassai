@@ -20,6 +20,19 @@
     });
 
 
+    /* fixed menu */
+    if(desktop){
+      $(window).scroll(function (event) {
+        var scroll = $(window).scrollTop();
+        if(scroll >= 10){
+          $('header').addClass('fixed');  
+        }else{
+          $('header').removeClass('fixed');  
+        }
+      });
+    }
+
+
     /* INPUT MASK */
     $('#cpf').mask('000.000.000-00', {reverse: true});
     var SPMaskBehavior = function (val) {
@@ -50,9 +63,9 @@
 
     
     /* CARROSSEL */
-    $('.fornecedores .carrossel').slick({
+    $('.carrossel-fornecedores .carrossel').slick({
       slidesToShow: 6,
-      slidesToScroll: 3,
+      slidesToScroll: 2,
       autoplay: true,
       dots: false,
       infinite: true,

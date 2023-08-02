@@ -14,6 +14,11 @@
 
 <div id="main">
   <div class="container">
+
+  <div class="sidebar">
+      <?php get_template_part( 'cadastrese' ); ?>     
+    </div>
+    
     <div class="content">  
 
     <h2><?php the_title(); ?></h2>
@@ -25,9 +30,7 @@
     </div>
 
 
-        <div class="sidebar">
-      <?php get_template_part( 'cadastrese' ); ?>     
-    </div>
+
 
     </div>
 </div>

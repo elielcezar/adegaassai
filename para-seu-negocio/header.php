@@ -51,14 +51,14 @@
               <li><a href="https://megamidiagroup.com.br/adegaassai/para-voce">Home <strong>Para Você</strong></a></li>
               <li><a href="https://megamidiagroup.com.br/adegaassai/para-seu-negocio/" class="active">Home <strong>Para Seu Negócio</strong></a></li>
             </ul>
-            <?php wp_nav_menu(array('theme_location' => 'main-menu')); ?>                   
+            
         </nav>       
       
         <h1 class="title"><a href="<?php echo site_url(); ?>"><?php echo get_bloginfo( 'name' ); ?></a></h1>
 
         <nav class="right">
             <ul>
-              <li class="selecao"><a href="https://megamidiagroup.com.br/adegaassai/para-seu-negocio/selecao-assai/">Seleção <strong>Assaí </strong></a></li>
+              <!--li class="selecao"><a href="https://megamidiagroup.com.br/adegaassai/para-seu-negocio/selecao-assai/">Seleção <strong>Assaí </strong></a></li-->
               <li class="vitrine"><a href="https://megamidiagroup.com.br/adegaassai/para-seu-negocio/vitrine-do-fornecedor/">Vitrine do <strong>Fornecedor</strong></a></li>
               <li class="cadastrese"><a href="https://megamidiagroup.com.br/adegaassai/para-seu-negocio/cadastre-se/" class="btn">Cadastre-se</a></li>
             </ul>            

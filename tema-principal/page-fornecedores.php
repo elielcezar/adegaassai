@@ -41,6 +41,11 @@ Template Name: Fornecedores
 
 <div id="main">
   <div class="container">
+
+  <div class="sidebar">
+      <?php get_template_part( 'cadastrese' ); ?>     
+    </div>
+
     <div class="content">
 
     <ul class="fornecedores">

@@ -7,4 +7,9 @@ Template: tema-principal
 Version: 1.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
-*//*# sourceMappingURL=style.css.map */
+*/
+@media (max-width: 1599px) {
+  #main {
+    background: #fff url(img/bg-main2.png) top center no-repeat;
+  }
+}/*# sourceMappingURL=style.css.map */

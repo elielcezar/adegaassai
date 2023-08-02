@@ -40,6 +40,12 @@ Template Name: Selecao Assai
 
 <div id="main">
   <div class="container">
+
+  <div class="sidebar">
+      <?php get_template_part( 'cadastrese' ); ?>     
+    </div>
+
+    
     <div class="content">  
       
         <div class="semana">
@@ -150,10 +156,7 @@ Template Name: Selecao Assai
 
     </div>
 
-    <div class="sidebar">
-      <?php get_template_part( 'cadastrese' ); ?>     
-    </div>
-
+   
     </div>
 </div>
 
