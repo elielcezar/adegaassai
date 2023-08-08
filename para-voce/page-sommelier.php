@@ -39,6 +39,8 @@ Template Name: Dica do Sommelier
 </section>
 
 <div id="main">
+<?php get_template_part( 'main-menu-mobile' ); ?>   
+
   <div class="container">
         
   <div class="sidebar">
@@ -50,7 +52,7 @@ Template Name: Dica do Sommelier
         
             <div class="title">
                 <h3>Seleção da semana</h3>
-                <a href="#tintos" class="anchor btn">Veja mais</a>
+                <!--a href="#tintos" class="anchor btn">Veja mais</a-->
             </div>
 
             <div class="wrapper">

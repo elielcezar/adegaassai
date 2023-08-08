@@ -31,14 +31,14 @@
           <a href="https://megamidiagroup.com.br/adegaassai/para-voce">Para <strong>Você</strong></a>
         </li>
         <li>
-          <a href="https://megamidiagroup.com.br/adegaassai/para-seu-negocio/">Para <strong>seu negócio</strong></a>
+          <a href="<?php echo site_url(); ?>/">Para <strong>seu negócio</strong></a>
         </li>
       </ul>
       <?php wp_nav_menu(array('theme_location' => 'main-menu')); ?>
       <ul class="menu">
-        <li class="selecao"><a href="https://megamidiagroup.com.br/adegaassai/para-seu-negocio/selecao-assai/">Seleção <strong>Assaí </strong></a></li>
-        <li class="vitrine"><a href="https://megamidiagroup.com.br/adegaassai/para-seu-negocio/vitrine-do-fornecedor/">Vitrine do <strong>Fornecedor</strong></a></li>
-        <li class="cadastrese"><a href="https://megamidiagroup.com.br/adegaassai/para-seu-negocio/cadastre-se/" class="btn">Cadastre-se</a></li>
+        <li class="selecao"><a href="<?php echo site_url(); ?>/selecao-assai/">Seleção <strong>Assaí </strong></a></li>
+        <li class="vitrine"><a href="<?php echo site_url(); ?>/vitrine-do-fornecedor/">Vitrine do <strong>Fornecedor</strong></a></li>
+        <li class="cadastrese"><a href="<?php echo site_url(); ?>/cadastre-se/" class="btn">Cadastre-se</a></li>
       </ul>
     </nav>
   </div>
@@ -49,7 +49,7 @@
         <nav class="left">
             <ul class="select">
               <li><a href="https://megamidiagroup.com.br/adegaassai/para-voce">Home <strong>Para Você</strong></a></li>
-              <li><a href="https://megamidiagroup.com.br/adegaassai/para-seu-negocio/" class="active">Home <strong>Para Seu Negócio</strong></a></li>
+              <li><a href="<?php echo site_url(); ?>/" class="active">Home <strong>Para Seu Negócio</strong></a></li>
             </ul>
             
         </nav>       
@@ -58,9 +58,9 @@
 
         <nav class="right">
             <ul>
-              <!--li class="selecao"><a href="https://megamidiagroup.com.br/adegaassai/para-seu-negocio/selecao-assai/">Seleção <strong>Assaí </strong></a></li-->
-              <li class="vitrine"><a href="https://megamidiagroup.com.br/adegaassai/para-seu-negocio/vitrine-do-fornecedor/">Vitrine do <strong>Fornecedor</strong></a></li>
-              <li class="cadastrese"><a href="https://megamidiagroup.com.br/adegaassai/para-seu-negocio/cadastre-se/" class="btn">Cadastre-se</a></li>
+              <!--li class="selecao"><a href="<?php echo site_url(); ?>/selecao-assai/">Seleção <strong>Assaí </strong></a></li-->
+              <li class="vitrine"><a href="<?php echo site_url(); ?>/vitrine-do-fornecedor/">Vitrine do <strong>Fornecedor</strong></a></li>
+              <li class="cadastrese"><a href="<?php echo site_url(); ?>/cadastre-se/" class="btn">Cadastre-se</a></li>
             </ul>            
         </nav>     
         

@@ -6,8 +6,8 @@
   <div class="item">
     <?php if (is_category('dicas')) : ?>
       <img src="https://megamidiagroup.com.br/adegaassai/para-seu-negocio/wp-content/uploads/sites/3/2023/07/subhome-dicas.jpg" alt="">
-    <?php elseif (is_category('harmonizacao')) : ?>
-      <img src="https://megamidiagroup.com.br/adegaassai/para-seu-negocio/wp-content/uploads/sites/3/2023/07/subhome-harmonizacao2.jpg" alt="">
+    <?php elseif (is_category('tipos-de-vinhos')) : ?>
+      <img src="https://megamidiagroup.com.br/adegaassai/para-voce/wp-content/uploads/sites/2/2023/08/banner-tipos-de-vinhos.png" alt="">
     <?php elseif (is_category('receitas')) : ?>
       <img src="https://megamidiagroup.com.br/adegaassai/para-seu-negocio/wp-content/uploads/sites/3/2023/07/sub-home-receitas.jpg" alt="">
     <?php endif; ?>
@@ -28,6 +28,8 @@
   </section>
 
 <div id="main">
+<?php get_template_part( 'main-menu-mobile' ); ?>     
+
   <div class="container">
   <div class="sidebar">
       <?php get_template_part( 'cadastrese' ); ?>     

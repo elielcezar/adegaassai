@@ -39,6 +39,9 @@ Template Name: Homepage Custom
 </section>
 
 <div id="main">
+
+<?php get_template_part( 'main-menu-mobile' ); ?>   
+
   <div class="container">
 
   
@@ -80,7 +83,7 @@ Template Name: Homepage Custom
 <?php
         $loop = new WP_Query(array(
           'post_type' => 'post',          
-          'category_name' => 'harmonizacao',
+          'category_name' => 'tipos-de-vinhos',
           'posts_per_page' => 1,
           'order' => 'DESC'
         ));
@@ -108,7 +111,7 @@ Template Name: Homepage Custom
 
       <div class="banner">    
         <a href="https://megamidiagroup.com.br/adegaassai/para-voce/indicacao-do-sommelier/">
-          <img src="<?php echo get_stylesheet_directory_uri() ?>/img/banner.jpg" alt="">     
+          <img src="<?php echo get_stylesheet_directory_uri() ?>/img/banner2.jpg" alt="">     
           </a>       
       </div>
 

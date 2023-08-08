@@ -14,6 +14,8 @@
 
 <div id="main">
 
+<?php get_template_part( 'main-menu-mobile' ); ?>   
+
   <div class="container">
   <div class="sidebar">
       <?php get_template_part( 'cadastrese' ); ?>     
@@ -23,6 +25,30 @@
     <div class="content">  
 
     <h2><?php the_title(); ?></h2>
+
+    <div class="ficha">
+      <div class="row">
+        <div class="col-1">
+          <img src="<?php the_field('foto_garrafa'); ?>" />
+        </div>
+        <div class="col-2">
+          <ul>
+            <li>
+              <strong>País de Origem:</strong> <?php the_field('pais_de_origem'); ?>
+            </li>
+            <li>
+              <strong>Uva:</strong> <?php the_field('uva'); ?>
+            </li>
+            <li>
+              <strong>Teor Alcoólico:</strong> <?php the_field('teor_alcoolico'); ?>
+            </li>
+            <li>
+              <strong>Vinícola:</strong> <?php the_field('vinicola'); ?>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
     
     <?php the_content(); ?>
 

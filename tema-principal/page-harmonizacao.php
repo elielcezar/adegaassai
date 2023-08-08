@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: Pagina
+Template Name: Harmonizacoes
 */
 //the content of page.php and now you can do what you want.
 ?>
@@ -39,7 +39,6 @@ Template Name: Pagina
 </section>
 
 <div id="main">
-
 <?php get_template_part( 'main-menu-mobile' ); ?>     
 
   <div class="container">
@@ -47,16 +46,36 @@ Template Name: Pagina
   <div class="sidebar">
       <?php get_template_part( 'cadastrese' ); ?>     
     </div>
-    
     <div class="content">  
       
-    <?php the_content(); ?>
+    <?php
+        $loop = new WP_Query(array(
+          'post_type' => 'harmonizacao',
+          'posts_per_page' => 10,
+          'orderby' => 'title',
+            'order' => 'ASC'         
+        ));
+        if ($loop->have_posts()) :
+          while ($loop->have_posts()) : $loop->the_post(); ?>
+      <div class="item">
+        <div class="col-1">          
+            <?php the_post_thumbnail('thumb-noticia'); ?>          
+        </div>
+        <div class="col-2">
+          <h3>            
+              <?php the_title(); ?>            
+          </h3>
+          <?php the_content(); ?>
+        </div>
+      </div>
+      <?php endwhile;                
+          endif;                            
+        ?>
 
     </div>
     
 
-    
-  </div>
+    </div>
 </div>
 
 

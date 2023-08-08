@@ -453,6 +453,73 @@ body.act {
   transform: translateX(0);
 }
 
+#main-menu-mobile-2 {
+  overflow-x: scroll;
+  background: #831e00;
+}
+@media (orientation: landscape) {
+  #main-menu-mobile-2 {
+    display: none !important;
+  }
+}
+#main-menu-mobile-2 ul#menu-menu-principal-2 {
+  display: flex;
+}
+#main-menu-mobile-2 ul#menu-menu-principal-2 li {
+  display: inline-block;
+}
+#main-menu-mobile-2 ul#menu-menu-principal-2 li a {
+  color: #fff !important;
+  display: inline-block;
+  padding: 40px 15px 15px 15px;
+  display: inline-block;
+  width: 140px;
+  height: 125px;
+  text-align: center;
+  display: flex;
+  align-items: flex-end;
+  background-repeat: no-repeat;
+  background-position: center 15px;
+}
+#main-menu-mobile-2 ul#menu-menu-principal-2 li a span {
+  width: 100%;
+  display: inline-block;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#main-menu-mobile-2 ul#menu-menu-principal-2 li.menu-item-188 a {
+  background-image: url(img/ico-selecao.png);
+}
+#main-menu-mobile-2 ul#menu-menu-principal-2 li.menu-item-190 a {
+  background-image: url(img/ico-vinhos.png);
+}
+#main-menu-mobile-2 ul#menu-menu-principal-2 li.menu-item-209 a {
+  background-image: url(img/ico-harmonizacao.png);
+}
+#main-menu-mobile-2 ul#menu-menu-principal-2 li.menu-item-80 a {
+  background-image: url(img/ico-receitas.png);
+}
+#main-menu-mobile-2 ul#menu-menu-principal-2 li.menu-item-193 a {
+  background-image: url(img/ico-dicas.png);
+}
+#main-menu-mobile-2 ul#menu-menu-principal-2 li.menu-item-158 a {
+  background-image: url(img/ico-sommelier.png);
+}
+#main-menu-mobile-2 ul#menu-menu-principal-2 li.menu-item-52 a {
+  background-image: url(img/ico-vinhos.png);
+}
+#main-menu-mobile-2 ul#menu-menu-principal-2 li.menu-item-186 a {
+  background-image: url(img/ico-harmonizacao.png);
+}
+#main-menu-mobile-2 ul#menu-menu-principal-2 li.menu-item-53 a {
+  background-image: url(img/ico-receitas.png);
+}
+#main-menu-mobile-2 ul#menu-menu-principal-2 li.menu-item-48 a {
+  background-image: url(img/ico-dicas.png);
+}
+
 a.btn {
   display: inline-block;
   border-radius: 50px;
@@ -514,6 +581,7 @@ header .container h1.title a {
   background-size: 100%;
   width: 200px;
   height: 106px;
+  transition: all 0.3s;
 }
 @media (orientation: portrait) {
   header .container nav {
@@ -636,9 +704,13 @@ header.fixed {
   background: rgba(0, 0, 0, 0.9);
   transition: all 0.3s;
 }
-header.fixed h1 {
+header.fixed .container h1.title {
   margin: 5px !important;
   transition: all 0.3s;
+}
+header.fixed .container h1.title a {
+  background-size: auto 100%;
+  height: 75px;
 }
 
 /*--- GERAL ---------------------------------------------------------------------------------------------*/
@@ -662,6 +734,7 @@ header.fixed h1 {
 }
 .banners.mobile img {
   width: 100%;
+  display: block;
 }
 
 ul.slick-dots {
@@ -694,7 +767,7 @@ ul.slick-dots li.slick-active button {
 #main {
   display: flex;
   padding: 0 0 50px 0;
-  background: #fff url(img/bg-main.png) top center no-repeat;
+  background: #fff url(img/bg-main.png?v2) top center no-repeat;
 }
 @media (orientation: portrait) {
   #main {
@@ -754,20 +827,20 @@ ul.slick-dots li.slick-active button {
 #main .sidebar #menu-menu-principal-1 li.menu-item-188 a {
   background-image: url(img/ico-selecao.png);
 }
-#main .sidebar #menu-menu-principal-1 li.menu-item-79 a, #main .sidebar #menu-menu-principal-1 li.menu-item-52 a {
-  background-image: url(img/ico-harmonizacao.png);
+#main .sidebar #menu-menu-principal-1 li.menu-item-52 a, #main .sidebar #menu-menu-principal-1 li.menu-item-190 a {
+  background-image: url(img/ico-vinhos.png);
 }
 #main .sidebar #menu-menu-principal-1 li.menu-item-80 a, #main .sidebar #menu-menu-principal-1 li.menu-item-53 a {
   background-image: url(img/ico-receitas.png);
 }
-#main .sidebar #menu-menu-principal-1 li.menu-item-48 a, #main .sidebar #menu-menu-principal-1 li.menu-item-189 a {
+#main .sidebar #menu-menu-principal-1 li.menu-item-48 a, #main .sidebar #menu-menu-principal-1 li.menu-item-193 a {
   background-image: url(img/ico-dicas.png);
 }
-#main .sidebar #menu-menu-principal-1 li.menu-item-188 a {
-  background-image: url(img/ico-receitas.png);
-}
 #main .sidebar #menu-menu-principal-1 li.menu-item-158 a {
-  background-image: url(img/ico-sommelier.png);
+  background-image: url(img/ico-sommelier.png?v2);
+}
+#main .sidebar #menu-menu-principal-1 li.menu-item-186 a, #main .sidebar #menu-menu-principal-1 li.menu-item-209 a {
+  background-image: url(img/ico-harmonizacao.png?v2);
 }
 #main .sidebar .cadastrese {
   border-radius: 15px;
@@ -842,42 +915,51 @@ ul.slick-dots li.slick-active button {
 }
 
 /*--- PAGINA INTERNA GENERICA ------------------------------------------------------------------------*/
-/*--- BLOG --------------------------------------------------------------------------------------------*/
+/*--- CATEGORIAS / BLOG HARMONIZACAO --------------------------------------------------------------------------------------------*/
 .category #main .content .wrapper,
-.page-template-page-blog #main .content .wrapper {
+.page-template-page-blog #main .content .wrapper,
+.page-template-page-harmonizacao #main .content .wrapper {
   box-shadow: 3px 2px 10px rgba(0, 0, 0, 0.1);
   border-radius: 20px;
 }
 .category #main .content .item,
-.page-template-page-blog #main .content .item {
+.page-template-page-blog #main .content .item,
+.page-template-page-harmonizacao #main .content .item {
   display: flex;
 }
 @media (orientation: portrait) {
   .category #main .content .item,
-  .page-template-page-blog #main .content .item {
+  .page-template-page-blog #main .content .item,
+  .page-template-page-harmonizacao #main .content .item {
     flex-direction: column;
   }
 }
 .category #main .content .item .col-1,
 .category #main .content .item .col-2,
 .page-template-page-blog #main .content .item .col-1,
-.page-template-page-blog #main .content .item .col-2 {
+.page-template-page-blog #main .content .item .col-2,
+.page-template-page-harmonizacao #main .content .item .col-1,
+.page-template-page-harmonizacao #main .content .item .col-2 {
   width: 50%;
 }
 @media (orientation: portrait) {
   .category #main .content .item .col-1,
   .category #main .content .item .col-2,
   .page-template-page-blog #main .content .item .col-1,
-  .page-template-page-blog #main .content .item .col-2 {
+  .page-template-page-blog #main .content .item .col-2,
+  .page-template-page-harmonizacao #main .content .item .col-1,
+  .page-template-page-harmonizacao #main .content .item .col-2 {
     width: 100%;
   }
 }
 .category #main .content .item .col-1,
-.page-template-page-blog #main .content .item .col-1 {
+.page-template-page-blog #main .content .item .col-1,
+.page-template-page-harmonizacao #main .content .item .col-1 {
   padding: 3%;
 }
 .category #main .content .item .col-2,
-.page-template-page-blog #main .content .item .col-2 {
+.page-template-page-blog #main .content .item .col-2,
+.page-template-page-harmonizacao #main .content .item .col-2 {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -885,22 +967,73 @@ ul.slick-dots li.slick-active button {
   padding-right: 3%;
 }
 .category #main .content .item .col-2 h3,
-.page-template-page-blog #main .content .item .col-2 h3 {
+.page-template-page-blog #main .content .item .col-2 h3,
+.page-template-page-harmonizacao #main .content .item .col-2 h3 {
   margin: 0;
 }
 .category #main .content .item .col-2 h3 a,
-.page-template-page-blog #main .content .item .col-2 h3 a {
+.page-template-page-blog #main .content .item .col-2 h3 a,
+.page-template-page-harmonizacao #main .content .item .col-2 h3 a {
   font-size: 24px;
   color: #831e00;
   font-weight: 700;
 }
 .category #main .fornecedores,
-.page-template-page-blog #main .fornecedores {
+.page-template-page-blog #main .fornecedores,
+.page-template-page-harmonizacao #main .fornecedores {
   margin-top: 50px;
 }
 .category #main .fornecedores h2,
-.page-template-page-blog #main .fornecedores h2 {
+.page-template-page-blog #main .fornecedores h2,
+.page-template-page-harmonizacao #main .fornecedores h2 {
   margin: 0;
+}
+
+/*--- HARMONIZACAO --------------------------------------------------------------------------------------------*/
+@media (orientation: portrait) {
+  .page-template-page-harmonizacao #main .content .item {
+    margin-bottom: 40px;
+  }
+}
+.page-template-page-harmonizacao #main .content .item .col-1 {
+  width: auto;
+}
+@media (orientation: portrait) {
+  .page-template-page-harmonizacao #main .content .item .col-1 {
+    padding: 0;
+  }
+}
+@media (orientation: landscape) {
+  .page-template-page-harmonizacao #main .content .item .col-1 img {
+    max-width: 300px;
+  }
+}
+@media (orientation: portrait) {
+  .page-template-page-harmonizacao #main .content .item .col-1 img {
+    margin-bottom: 20px;
+  }
+}
+.page-template-page-harmonizacao #main .content .item .col-2 {
+  width: auto;
+}
+.page-template-page-harmonizacao #main .content .item .col-2 h3 {
+  margin-bottom: 20px;
+  font-weight: 700;
+  color: #831e00;
+}
+.page-template-page-harmonizacao #main .content .item .col-2 ul {
+  margin-left: 25px;
+  list-style: square;
+}
+.page-template-page-harmonizacao #main .content .item .col-2 ul li {
+  margin: 0 0 10px 0;
+}
+.page-template-page-harmonizacao #main .content .item .col-2 ul li a {
+  font-weight: 500;
+  color: #831e00;
+}
+.page-template-page-harmonizacao #main .content .item .col-2 ul li a:hover {
+  text-decoration: underline;
 }
 
 /*--- BLOG INDIVIDUAL ----------------------------------------------------------------------------------*/
@@ -988,7 +1121,7 @@ ul.slick-dots li.slick-active button {
 }
 .page-template-page-sommelier #main .semana .title,
 .page-template-page-selecao #main .semana .title {
-  padding: 50px 25px;
+  padding: 50px 35px;
   background: #ffa400;
   max-width: 25%;
   display: flex;
@@ -1008,7 +1141,8 @@ ul.slick-dots li.slick-active button {
   color: #831e00;
   text-transform: uppercase;
   font-weight: 700;
-  font-size: 21px;
+  font-size: 30px;
+  line-height: 42px;
 }
 .page-template-page-sommelier #main .semana .title a.btn,
 .page-template-page-selecao #main .semana .title a.btn {
@@ -1248,9 +1382,60 @@ ul.slick-dots li.slick-active button {
   }
 }
 
-/*--- INDICACAO SOMMELIER - INDIVIDUAL ----------------------------------------------------------------------------------*/
+/*--- SELECAO / INDICACAO SOMMELIER - INDIVIDUAL ----------------------------------------------------------------------------------*/
+.single-selecao #main h2,
 .single-indicacao_sommelier #main h2 {
   font-weight: 700;
+}
+.single-selecao #main .content .ficha,
+.single-indicacao_sommelier #main .content .ficha {
+  margin: 40px 0;
+}
+.single-selecao #main .content .ficha .row,
+.single-indicacao_sommelier #main .content .ficha .row {
+  display: flex;
+}
+@media (orientation: portrait) {
+  .single-selecao #main .content .ficha .row,
+  .single-indicacao_sommelier #main .content .ficha .row {
+    flex-direction: column;
+  }
+}
+.single-selecao #main .content .ficha .row .col-1,
+.single-indicacao_sommelier #main .content .ficha .row .col-1 {
+  width: 40%;
+  text-align: center;
+  background: transparent url(img/fundo-laranja.png) bottom center no-repeat;
+  background-size: 80%;
+}
+@media (orientation: portrait) {
+  .single-selecao #main .content .ficha .row .col-1,
+  .single-indicacao_sommelier #main .content .ficha .row .col-1 {
+    width: 100%;
+    margin-bottom: 40px;
+  }
+}
+.single-selecao #main .content .ficha .row .col-1 img,
+.single-indicacao_sommelier #main .content .ficha .row .col-1 img {
+  max-height: 225px;
+}
+.single-selecao #main .content .ficha .row .col-2,
+.single-indicacao_sommelier #main .content .ficha .row .col-2 {
+  width: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+@media (orientation: portrait) {
+  .single-selecao #main .content .ficha .row .col-2,
+  .single-indicacao_sommelier #main .content .ficha .row .col-2 {
+    width: 100%;
+    justify-content: center;
+  }
+}
+.single-selecao #main .content .ficha .row .col-2 ul li,
+.single-indicacao_sommelier #main .content .ficha .row .col-2 ul li {
+  margin: 0 0 15px 0;
 }
 
 /*--- CADASTRE-SE ----------------------------------------------------------------------------------*/
@@ -1551,4 +1736,18 @@ footer .container .row .col-5 a.btn:hover {
   text-decoration: none;
   background: #333;
   color: #fff !important;
+}
+
+.footer-2 {
+  background: #551401;
+  color: #fff;
+}
+.footer-2 p {
+  margin: 0;
+  text-align: center;
+  font-size: 12px;
+}
+.footer-2 p a {
+  color: #fff;
+  text-decoration: none;
 }/*# sourceMappingURL=style.css.map */

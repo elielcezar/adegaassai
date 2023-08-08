@@ -40,6 +40,8 @@ Template Name: Fornecedores
 </section>
 
 <div id="main">
+<?php get_template_part( 'main-menu-mobile' ); ?>     
+
   <div class="container">
 
   <div class="sidebar">

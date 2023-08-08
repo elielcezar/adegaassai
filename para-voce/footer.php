@@ -47,10 +47,11 @@
                     <a href="<?php echo site_url(); ?>/cadastre-se" class="btn">Cadastre-se</a>
                 </div>
             </div>
-       
-       
     </div>
 </footer>
+<div class="footer-2">                
+    <p>Powered by: <a href="https://www.megamidia.com.br/" target="_blank">MegaMidia Group</a></p>                
+</div>
 
 <?php wp_footer(); ?>
 

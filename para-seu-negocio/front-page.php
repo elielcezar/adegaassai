@@ -17,7 +17,7 @@ Template Name: Homepage Custom
       $url = $image['url'];
   ?>
   <div class="item">
-    <a href="<?php echo $url; ?>"><img src="<?php echo $full_image_url; ?>" alt=""></a>
+    <img src="<?php echo $full_image_url; ?>" alt="">
   </div>
   <?php endforeach;
   endif; ?>
@@ -32,13 +32,16 @@ Template Name: Homepage Custom
       $url = $image['url'];
   ?>
   <div class="item">
-    <a href="<?php echo $url; ?>"><img src="<?php echo $full_image_url; ?>" alt=""></a>
+    <img src="<?php echo $full_image_url; ?>" alt="">
   </div>
   <?php endforeach;
   endif; ?>
 </section>
 
 <div id="main">
+
+<?php get_template_part( 'main-menu-mobile' ); ?>     
+
   <div class="container">
 
   <div class="sidebar">  
@@ -80,7 +83,7 @@ Template Name: Homepage Custom
     <?php
         $loop = new WP_Query(array(
           'post_type' => 'post',          
-          'category_name' => 'harmonizacao',
+          'category_name' => 'tipos-de-vinhos',
           'posts_per_page' => 1,
           'order' => 'DESC'
         ));
