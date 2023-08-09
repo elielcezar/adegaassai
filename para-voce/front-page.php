@@ -17,7 +17,7 @@ Template Name: Homepage Custom
       $url = $image['url'];
   ?>
   <div class="item">
-    <a href="<?php echo $url; ?>"><img src="<?php echo $full_image_url; ?>" alt=""></a>
+    <img src="<?php echo $full_image_url; ?>" alt="">
   </div>
   <?php endforeach;
   endif; ?>
@@ -32,7 +32,7 @@ Template Name: Homepage Custom
       $url = $image['url'];
   ?>
   <div class="item">
-    <a href="<?php echo $url; ?>"><img src="<?php echo $full_image_url; ?>" alt=""></a>
+    <img src="<?php echo $full_image_url; ?>" alt="">
   </div>
   <?php endforeach;
   endif; ?>
@@ -54,7 +54,7 @@ Template Name: Homepage Custom
     <?php
         $loop = new WP_Query(array(
           'post_type' => 'post',          
-          'category_name' => 'dicas',
+          'category_name' => 'segredos-do-vinho',
           'posts_per_page' => 1,
           'order' => 'DESC'
         ));
@@ -64,7 +64,7 @@ Template Name: Homepage Custom
       <div class="card left">
         <div class="col-1 info">
           <h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
-          <h3><?php the_field('subtitulo'); ?></h3>
+          <!--h3><?php the_field('subtitulo'); ?></h3-->
           <p><?php the_field('chamada'); ?></p>
           <a href="<?php the_permalink(); ?>" class="btn">Saiba mais</a>
         </div>

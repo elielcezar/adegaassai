@@ -24,6 +24,14 @@
     <div class="content">  
 
     <h2><?php the_title(); ?></h2>
+
+    <?php 
+      $chamada = get_field('chamada');
+      if($chamada) { ?>
+        <div class="chamada">
+          <p><?php the_field('chamada'); ?></p>
+        </div>
+      <?php } ?>
     
     <?php the_content(); ?>
 

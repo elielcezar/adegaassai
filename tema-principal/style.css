@@ -111,11 +111,11 @@ form {
 }
 form .form-item:nth-child(even) {
   width: 48%;
-  margin: 0 2% 15px 0;
+  margin: 0 0 15px 0;
 }
 form .form-item:nth-child(odd) {
   width: 48%;
-  margin: 0 0 20px 2%;
+  margin: 0 0 15px 0;
 }
 form .form-item.textarea {
   width: 100%;
@@ -293,6 +293,39 @@ img {
   .container #sidebar {
     width: 25%;
   }
+}
+
+.slick-slider {
+  margin-bottom: 0 !important;
+}
+.slick-slider ul.slick-dots {
+  width: 100%;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  display: flex;
+  text-align: center;
+}
+.slick-slider ul.slick-dots li {
+  display: inline-block;
+}
+.slick-slider ul.slick-dots li button {
+  text-indent: -5000em;
+  background: transparent;
+  padding: 0;
+  width: 15px;
+  height: 15px;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  margin: 0 5px;
+}
+.slick-slider ul.slick-dots li button::before {
+  display: none;
+}
+.slick-slider ul.slick-dots li.slick-active button {
+  background: #fff;
 }
 
 /*--------------------------------------------*/
@@ -737,37 +770,9 @@ header.fixed .container h1.title a {
   display: block;
 }
 
-ul.slick-dots {
-  width: 100%;
-  bottom: 30px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: inherit;
-  display: flex;
-  text-align: center;
-}
-ul.slick-dots li {
-  display: inline-block;
-}
-ul.slick-dots li button {
-  text-indent: -5000em;
-  background: transparent;
-  padding: 0;
-  width: 15px;
-  height: 15px;
-  border: 2px solid #fff;
-  border-radius: 50%;
-  margin: 0 5px;
-}
-ul.slick-dots li.slick-active button {
-  background: #fff;
-}
-
 #main {
   display: flex;
   padding: 0 0 50px 0;
-  background: #fff url(img/bg-main.png?v2) top center no-repeat;
 }
 @media (orientation: portrait) {
   #main {
@@ -803,8 +808,10 @@ ul.slick-dots li.slick-active button {
 #main .sidebar #menu-menu-principal-1 {
   background: #831e00;
   border-bottom-right-radius: 15px;
-  margin-bottom: 30px;
+  border-bottom-left-radius: 15px;
+  margin-bottom: 38px;
   padding-right: 15px;
+  padding-left: 20px;
 }
 @media (orientation: portrait) {
   #main .sidebar #menu-menu-principal-1 {
@@ -878,7 +885,7 @@ ul.slick-dots li.slick-active button {
 .home #main .content .card {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 50px;
+  margin-bottom: 35px;
 }
 @media (orientation: portrait) {
   .home #main .content .card {
@@ -995,31 +1002,13 @@ ul.slick-dots li.slick-active button {
     margin-bottom: 40px;
   }
 }
-.page-template-page-harmonizacao #main .content .item .col-1 {
-  width: auto;
-}
-@media (orientation: portrait) {
-  .page-template-page-harmonizacao #main .content .item .col-1 {
-    padding: 0;
-  }
-}
-@media (orientation: landscape) {
-  .page-template-page-harmonizacao #main .content .item .col-1 img {
-    max-width: 300px;
-  }
-}
-@media (orientation: portrait) {
-  .page-template-page-harmonizacao #main .content .item .col-1 img {
-    margin-bottom: 20px;
-  }
-}
-.page-template-page-harmonizacao #main .content .item .col-2 {
-  width: auto;
-}
 .page-template-page-harmonizacao #main .content .item .col-2 h3 {
   margin-bottom: 20px;
   font-weight: 700;
   color: #831e00;
+}
+.page-template-page-harmonizacao #main .content .item .col-2 p {
+  margin: 0 0 20px 0;
 }
 .page-template-page-harmonizacao #main .content .item .col-2 ul {
   margin-left: 25px;
@@ -1034,6 +1023,13 @@ ul.slick-dots li.slick-active button {
 }
 .page-template-page-harmonizacao #main .content .item .col-2 ul li a:hover {
   text-decoration: underline;
+}
+
+/*--- HARMONIZACAO INDIVIDUAL ----------------------------------------------------------------------------------*/
+.single-harmonizacao .chamada p {
+  font-style: italic;
+  font-size: 19px;
+  font-weight: 300;
 }
 
 /*--- BLOG INDIVIDUAL ----------------------------------------------------------------------------------*/
@@ -1454,10 +1450,17 @@ ul.slick-dots li.slick-active button {
 .page-id-15 #main .content {
   text-align: center;
 }
+.page-id-14 #main .content h2,
+.page-id-15 #main .content h2 {
+  font-weight: 700;
+  font-size: 34px;
+  margin-bottom: 50px;
+  color: #831e00;
+  text-align: left;
+}
 .page-id-14 #main .content .wpcf7-form,
 .page-id-15 #main .content .wpcf7-form {
   margin: 0 auto;
-  max-width: 700px;
   width: 100%;
   margin-bottom: 50px;
 }
@@ -1507,7 +1510,6 @@ ul.slick-dots li.slick-active button {
 }
 .page-id-14 #main .content .wpcf7-form .row .form-item,
 .page-id-15 #main .content .wpcf7-form .row .form-item {
-  padding: 0 10px;
   text-align: left;
 }
 @media (orientation: portrait) {

@@ -51,8 +51,7 @@ Template Name: Dica do Sommelier
         <div class="semana">
         
             <div class="title">
-                <h3>Seleção da semana</h3>
-                <!--a href="#tintos" class="anchor btn">Veja mais</a-->
+                <h3>Seleção da semana</h3>                
             </div>
 
             <div class="wrapper">

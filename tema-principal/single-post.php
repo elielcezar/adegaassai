@@ -2,7 +2,7 @@
 
 <section class="banners top desktop carrossel">
   <div class="item">
-    <?php if (in_category('dicas')) : ?>
+    <?php if (in_category('segredos-do-vinho')) : ?>
       <img src="https://megamidiagroup.com.br/adegaassai/para-seu-negocio/wp-content/uploads/sites/3/2023/07/subhome-dicas.jpg" alt="">
     <?php elseif (in_category('tipos-de-vinhos')) : ?>
       <img src="https://megamidiagroup.com.br/adegaassai/para-voce/wp-content/uploads/sites/2/2023/08/banner-tipos-de-vinhos.png" alt="">

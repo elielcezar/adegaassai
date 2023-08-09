@@ -84,6 +84,18 @@
       ],
     });
 
+    $('.home .banners.carrossel').slick({
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      autoplay: true,
+      dots: true,
+      infinite: true,
+      arrows: false,
+      adaptiveHeight: true,
+      fade: false,
+      autoplaySpeed: 4000
+    });
+
 
 
 

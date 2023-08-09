@@ -59,13 +59,30 @@ Template Name: Harmonizacoes
           while ($loop->have_posts()) : $loop->the_post(); ?>
       <div class="item">
         <div class="col-1">          
-            <?php the_post_thumbnail('thumb-noticia'); ?>          
+            <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('thumb-noticia'); ?></a>
         </div>
         <div class="col-2">
-          <h3>            
-              <?php the_title(); ?>            
+          <h3>       
+              <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
           </h3>
-          <?php the_content(); ?>
+          <p class="chamada"><?php the_field('chamada'); ?></p>
+          <div class="harmoniza-com">
+            <ul>
+              <?php
+              $featured_posts = get_field('harmoniza_com');
+              if( $featured_posts ): ?>              
+                  <?php foreach( $featured_posts as $post ):                     
+                      setup_postdata($post); ?>
+                      <li>                      
+                          <a href="<?php the_permalink(); ?>">
+                            <?php the_title(); ?>
+                          </a>
+                        </li>       
+                  <?php endforeach; ?>                
+                  <?php wp_reset_postdata(); ?>              
+              <?php endif; ?>
+            </ul>
+          </div>                      
         </div>
       </div>
       <?php endwhile;                
