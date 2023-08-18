@@ -2,7 +2,11 @@
 
 <section class="banners top desktop carrossel">
     <div class="item">
-    <a href=""><img src="https://megamidiagroup.com.br/adegaassai/para-voce/wp-content/uploads/sites/2/2023/07/banner-blog-2.jpg" alt=""></a>
+      <?php if ( is_singular( array( 'harmonizacao') ) ) { ?>
+        <img src="https://megamidiagroup.com.br/adegaassai/para-seu-negocio/wp-content/uploads/sites/3/2023/08/harmonizacao.jpg" alt="">
+      <?php } else { ?>
+        <img src="https://megamidiagroup.com.br/adegaassai/para-voce/wp-content/uploads/sites/2/2023/07/home-para-vocE-2.png" alt="">
+      <?php } ?>
   </div>
   </section>
 

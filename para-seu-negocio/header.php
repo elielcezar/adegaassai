@@ -57,8 +57,7 @@
         <h1 class="title"><a href="<?php echo site_url(); ?>"><?php echo get_bloginfo( 'name' ); ?></a></h1>
 
         <nav class="right">
-            <ul>
-              <!--li class="selecao"><a href="<?php echo site_url(); ?>/selecao-assai/">Seleção <strong>Assaí </strong></a></li-->
+            <ul>              
               <li class="vitrine"><a href="<?php echo site_url(); ?>/vitrine-do-fornecedor/">Vitrine do <strong>Fornecedor</strong></a></li>
               <li class="cadastrese"><a href="<?php echo site_url(); ?>/cadastre-se/" class="btn">Cadastre-se</a></li>
             </ul>            

@@ -1,5 +1,13 @@
 <?php wp_nav_menu(array('theme_location' => 'main-menu')); ?>        
 
+<div class="podcast">
+    <img src="https://megamidiagroup.com.br/adegaassai/para-voce/wp-content/uploads/sites/2/2023/08/banner-podcast-2.png" alt="">  
+    <audio controls id="player">
+      <source src="https://megamidiagroup.com.br/adegaassai/wp-content/themes/tema-principal/audio/podcast.mp3" type="audio/mp3">
+    </audio>
+</div>
+
+
 <div class="cadastrese">
   <h3>Newsletter</h3>
     <p>Receba informações sobre o universo dos vinhos</p>

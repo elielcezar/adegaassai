@@ -26,6 +26,7 @@
        
             <div class="row">
                 <div class="col-1">
+                <img src="<?php echo get_stylesheet_directory_uri() ?>/img/logo-assai.png" alt="">
                     <img src="<?php echo get_stylesheet_directory_uri() ?>/img/logo-adega.png" alt="">
                 </div>
                 <div class="col-2">
@@ -50,7 +51,10 @@
     </div>
 </footer>
 <div class="footer-2">                
-    <p>Powered by: <a href="https://www.megamidia.com.br/" target="_blank">MegaMidia Group</a></p>                
+    <div class="container">
+        <p>Powered by: <a href="https://www.megamidia.com.br/" target="_blank">MegaMidia Group</a></p>          
+        <p>Copyright 2023. Todos os direitos reservados.</p>      
+    </div>
 </div>
 
 <?php wp_footer(); ?>

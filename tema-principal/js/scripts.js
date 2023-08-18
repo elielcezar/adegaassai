@@ -6,6 +6,16 @@
     const desktop = h < w;
     const menuMobile = document.querySelector('.menu-mobile .mainMenu');
 
+
+    $("a#example1").fancybox({
+      'titleShow'     : false
+    });
+
+    $("a#link-video").fancybox({
+      'titleShow'     : false
+    });
+
+
     
     /* BUTTON MENU MOBILE */
     $('.menuBtn').click(function () {      
@@ -24,17 +34,27 @@
     if(desktop){
       $(window).scroll(function (event) {
         var scroll = $(window).scrollTop();
-        if(scroll >= 10){
+        if(scroll >= 140){
           $('header').addClass('fixed');  
         }else{
           $('header').removeClass('fixed');  
         }
       });
     }
-
+    
+    $('.podcast img').click(function toggleAudio() {
+          var audioElement = document.getElementById('player');      
+          if (audioElement.paused) {
+            audioElement.play();    
+          } else {
+            audioElement.pause();    
+          }
+        } 
+    );
 
     /* INPUT MASK */
     $('#cpf').mask('000.000.000-00', {reverse: true});
+    $('#cnpj').mask('00.000.000/0000-00', {reverse: true});
     var SPMaskBehavior = function (val) {
       return val.replace(/\D/g, '').length === 11 ? '(00) 00000-0000' : '(00) 0000-00009';
     },

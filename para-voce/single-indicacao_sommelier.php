@@ -2,7 +2,7 @@
 
 <section class="banners top desktop carrossel">
     <div class="item">
-    <a href=""><img src="https://megamidiagroup.com.br/adegaassai/para-voce/wp-content/uploads/sites/2/2023/07/subhome-sommelier.png" alt=""></a>
+    <a href=""><img src="https://megamidiagroup.com.br/adegaassai/para-voce/wp-content/uploads/sites/2/2023/08/monte-sua-adega.jpg" alt=""></a>
   </div>
   </section>
 

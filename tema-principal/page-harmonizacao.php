@@ -47,6 +47,8 @@ Template Name: Harmonizacoes
       <?php get_template_part( 'cadastrese' ); ?>     
     </div>
     <div class="content">  
+
+    <?php the_content(); ?>    
       
     <?php
         $loop = new WP_Query(array(

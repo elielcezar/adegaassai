@@ -23,6 +23,16 @@ Template Name: Homepage Custom
   endif; ?>
 </section>
 
+<section class="banners top mobile">
+    <div class="item">
+    <a href=""><img src="https://megamidiagroup.com.br/adegaassai/para-seu-negocio/wp-content/uploads/sites/3/2023/07/v3.jpg" alt=""></a>
+  </div>
+  </section>
+
+<div id="main">
+
+<?php get_template_part( 'main-menu-mobile' ); ?>     
+
 <section class="banners top mobile carrossel">
   <?php
   $images = acf_photo_gallery('banners_mobile', $post->ID);
@@ -38,9 +48,6 @@ Template Name: Homepage Custom
   endif; ?>
 </section>
 
-<div id="main">
-
-<?php get_template_part( 'main-menu-mobile' ); ?>     
 
   <div class="container">
 
@@ -54,17 +61,17 @@ Template Name: Homepage Custom
     <?php
         $loop = new WP_Query(array(
           'post_type' => 'post',          
-          'category_name' => 'segredos-do-vinho',
+          'category_name' => 'blog-do-vinho',
           'posts_per_page' => 1,
           'order' => 'DESC'
         ));
         if ($loop->have_posts()) :
           while ($loop->have_posts()) : $loop->the_post(); ?>
 
-      <div class="card left">
+      <div class="card left blog-do-vinho">
         <div class="col-1 info">
           <h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
-          <!--h3><?php the_field('subtitulo'); ?></h3-->
+          <h3><?php the_field('subtitulo'); ?></h3>
           <p><?php the_field('chamada'); ?></p>
           <a href="<?php the_permalink(); ?>" class="btn">Saiba mais</a>
         </div>
@@ -89,7 +96,7 @@ Template Name: Homepage Custom
         ));
         if ($loop->have_posts()) :
           while ($loop->have_posts()) : $loop->the_post(); ?>
-      <div class="card right">
+      <div class="card right tipos-de-vinhos">
         <div class="col-1 info">
           <h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
           <h3><?php the_field('subtitulo'); ?></h3>
@@ -113,6 +120,18 @@ Template Name: Homepage Custom
           </a>      
       </div>
 
+      <!--a id="example1" href="http://farm6.staticflickr.com/5614/15602332537_bae1aaccd8_b.jpg">
+      <img alt="example1" src="http://farm6.staticflickr.com/5614/15602332537_bae1aaccd8_m.jpg">
+    </a-->
+
+      
+    <div id="video">          
+          <a data-fancybox data-width="640" data-height="360" href="https://megamidiagroup.com.br/adegaassai/wp-content/themes/tema-principal/img/vinhos-salton.mp4">
+        <img class="card-img-top img-fluid" src="https://megamidiagroup.com.br/adegaassai/wp-content/themes/tema-principal/img/video.jpg" />
+      </a>
+      </div>
+
+
       <?php
         $loop = new WP_Query(array(
           'post_type' => 'post',          
@@ -122,7 +141,7 @@ Template Name: Homepage Custom
         ));
         if ($loop->have_posts()) :
           while ($loop->have_posts()) : $loop->the_post(); ?>
-      <div class="card left">
+      <div class="card left receitas">
         <div class="col-1 info">
         <h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
           <h3><?php the_field('subtitulo'); ?></h3>
