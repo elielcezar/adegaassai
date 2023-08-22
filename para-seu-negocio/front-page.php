@@ -61,14 +61,14 @@ Template Name: Homepage Custom
     <?php
         $loop = new WP_Query(array(
           'post_type' => 'post',          
-          'category_name' => 'blog-do-vinho',
+          'category_name' => 'blog-da-adega',
           'posts_per_page' => 1,
           'order' => 'DESC'
         ));
         if ($loop->have_posts()) :
           while ($loop->have_posts()) : $loop->the_post(); ?>
 
-      <div class="card left blog-do-vinho">
+      <div class="card left blog-da-adega">
         <div class="col-1 info">
           <h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
           <h3><?php the_field('subtitulo'); ?></h3>

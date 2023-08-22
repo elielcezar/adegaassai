@@ -117,8 +117,18 @@
     });
 
 
-
-
+    /*--- COOKIES ---*/
+    $('a.para-voce').click(function(){      
+      localStorage.setItem('area', 'para-voce');            
+    });
+    $('a.para-negocio').click(function(){      
+      localStorage.setItem('area', 'para-negocio');            
+    });
+    
+    const areaName = localStorage.getItem('area');
+    
+    
+    
 
   });
 })(jQuery);

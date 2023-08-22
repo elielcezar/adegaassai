@@ -4,7 +4,7 @@
 
 <section class="banners top desktop carrossel">
   <div class="item">
-    <?php if (is_category('blog-do-vinho')) : ?>
+    <?php if (is_category('blog-da-adega')) : ?>
       <img src="https://megamidiagroup.com.br/adegaassai/para-seu-negocio/wp-content/uploads/sites/3/2023/08/blog-da-adega.png" alt="">
     <?php elseif (is_category('tipos-de-vinhos')) : ?>
       <img src="https://megamidiagroup.com.br/adegaassai/para-seu-negocio/wp-content/uploads/sites/3/2023/08/tipos-de-vinhos.jpg" alt="">
