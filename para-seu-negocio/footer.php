@@ -26,9 +26,8 @@
     <div class="container">
         
             <div class="row">
-                <div class="col-1">
-                    <img src="<?php echo get_stylesheet_directory_uri() ?>/img/logo-assai.png" alt="">
-                    <img src="<?php echo get_stylesheet_directory_uri() ?>/img/logo-adega.png" alt="">
+                <div class="col-1">                    
+                <img src="<?php echo get_stylesheet_directory_uri() ?>/img/logo_assai.png" alt="">                    
                 </div>
                 <div class="col-2">
                 <p>A plataforma Adega Assaí é uma iniciativa do Assaí Atacadista.</p>

@@ -1,0 +1,318 @@
+@charset "UTF-8";
+/*
+Theme Name: Cervejas Para Você
+Author: Eliel Cezar
+Author URI: http://eliel.dev
+Template: tema-principal
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+*/
+h2 {
+  font-size: 2.5rem;
+}
+
+a.btn {
+  background: #f68c21;
+}
+
+#main a:hover, #main a:active:hover, #main a:visited:hover {
+  color: #f68c21;
+}
+
+header .container nav.left .select li a.active,
+header .container nav.left .select li a:hover {
+  border-bottom: 2px solid #f68c21;
+}
+
+.banners.desktop {
+  border-bottom: 10px solid #f68c21;
+}
+
+#main .sidebar #menu-menu-principal-1 {
+  background: #f68c21;
+}
+
+.sidebar .banner {
+  margin-bottom: 25px;
+}
+.sidebar .banner a.btn {
+  padding: 0;
+  background: transparent;
+}
+
+#main .sidebar ul.menu,
+#main-menu-mobile ul.menu {
+  background: #f68c21;
+}
+#main .sidebar ul.menu .menu-item-73 a,
+#main-menu-mobile ul.menu .menu-item-73 a {
+  background-image: url(../tema-principal/img/ico-selecao.png);
+}
+#main .sidebar ul.menu .menu-item-75 a,
+#main-menu-mobile ul.menu .menu-item-75 a {
+  background-image: url(../tema-principal/img/ico-cervejas.png);
+}
+#main .sidebar ul.menu .menu-item-165 a,
+#main-menu-mobile ul.menu .menu-item-165 a {
+  background-image: url(../tema-principal/img/ico-harmonizacao.png?v2);
+}
+#main .sidebar ul.menu .menu-item-155 a,
+#main-menu-mobile ul.menu .menu-item-155 a {
+  background-image: url(../tema-principal/img/ico-receitas.png);
+}
+#main .sidebar ul.menu .menu-item-77 a,
+#main-menu-mobile ul.menu .menu-item-77 a {
+  background-image: url(../tema-principal/img/ico-dicas.png);
+}
+#main .sidebar ul.menu .menu-item-74,
+#main-menu-mobile ul.menu .menu-item-74 {
+  background-color: #831e00;
+}
+#main .sidebar ul.menu .menu-item-74 a,
+#main-menu-mobile ul.menu .menu-item-74 a {
+  background-image: url(../tema-principal/img/ico-vinhos.png?v2);
+}
+#main .sidebar ul.menu .menu-item-89,
+#main-menu-mobile ul.menu .menu-item-89 {
+  background-color: #ff5e00;
+}
+#main .sidebar ul.menu .menu-item-89 a,
+#main-menu-mobile ul.menu .menu-item-89 a {
+  background-image: url(../tema-principal/img/ico-destilados.png?v2);
+}
+
+#main-menu-mobile {
+  background: #f68c21;
+}
+#main-menu-mobile ul.menu .menu-item-165 a {
+  padding-bottom: 25px;
+}
+#main-menu-mobile ul.menu .menu-item-155 a {
+  padding-bottom: 25px;
+}
+#main-menu-mobile ul.menu .menu-item-74 a {
+  padding-bottom: 25px;
+}
+#main-menu-mobile ul.menu .menu-item-89 a {
+  padding-bottom: 25px;
+}
+
+/*--- HOME ---------------------------------------------------------------------------*/
+.home #main .content .card.receitas {
+  background: #fefbf2;
+}
+.home #main .content .card.blog-da-adega {
+  background: #f7f6f5;
+}
+
+/*--- CATEGORIA -------------------------------------------------------------------------*/
+.category #main .content .item,
+.page-template-page-blog #main .content .item,
+.page-template-page-harmonizacao #main .content .item {
+  background: #fefbf2;
+}
+
+/*--- SELECAO / SOMMELIER ---------------------------------------------------------------------------------------------*/
+.page-template-page-monte-adega #main {
+  padding: 0;
+}
+@media (orientation: portrait) {
+  .page-template-page-monte-adega #main .content {
+    padding: 0;
+  }
+}
+.page-template-page-monte-adega #main .lista h3 {
+  text-transform: uppercase;
+  font-weight: 800;
+  letter-spacing: 2px;
+  font-size: 28px;
+  color: #f68c21;
+}
+@media (orientation: portrait) {
+  .page-template-page-monte-adega #main .lista h3 {
+    flex-wrap: wrap;
+  }
+}
+.page-template-page-monte-adega #main .lista .row {
+  display: flex;
+  flex-wrap: wrap;
+}
+.page-template-page-monte-adega #main .lista .item {
+  width: 50%;
+  margin-bottom: 20px;
+}
+.page-template-page-monte-adega #main .lista .item:nth-child(odd) {
+  padding: 0 2% 2% 0;
+}
+.page-template-page-monte-adega #main .lista .item:nth-child(even) {
+  padding: 0 0 2% 2%;
+}
+@media (orientation: portrait) {
+  .page-template-page-monte-adega #main .lista .item {
+    max-width: 100%;
+    width: 100%;
+    padding: 0 !important;
+    margin-bottom: 40px;
+  }
+}
+.page-template-page-monte-adega #main .lista .item h4 {
+  width: 100%;
+  padding: 10px;
+  text-align: center;
+  color: #fff;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin: 0 0 7px 0;
+}
+.page-template-page-monte-adega #main .lista .item .col-1 {
+  width: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.page-template-page-monte-adega #main .lista .item .col-1 img {
+  max-height: 300px;
+  width: auto;
+}
+.page-template-page-monte-adega #main .lista .item .col-2 {
+  width: 70%;
+  padding: 7%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: #f68c21;
+  min-height: 320px;
+  position: relative;
+}
+@media (max-width: 1610px) and (orientation: landscape) {
+  .page-template-page-monte-adega #main .lista .item .col-2 {
+    min-height: 19vw;
+  }
+}
+.page-template-page-monte-adega #main .lista .item .col-2::after {
+  content: "";
+  display: block;
+  background: #b02a22;
+  position: absolute;
+  left: -4px;
+  top: 50%;
+  width: 8px;
+  height: 150px;
+  margin-top: -75px;
+}
+.page-template-page-monte-adega #main .lista .item .col-2 h3 {
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 15px;
+  line-height: 16px;
+  margin: 0;
+  margin-bottom: 12px;
+}
+@media (orientation: portrait) {
+  .page-template-page-monte-adega #main .lista .item .col-2 h3 {
+    font-size: 14px;
+    letter-spacing: 1px;
+  }
+}
+.page-template-page-monte-adega #main .lista .item .col-2 h3 a {
+  color: #fff;
+}
+.page-template-page-monte-adega #main .lista .item .col-2 h3 a:hover {
+  text-decoration: underline;
+}
+.page-template-page-monte-adega #main .lista .item .col-2 ul {
+  color: #fff;
+  font-weight: 300;
+  font-size: 14px;
+}
+.page-template-page-monte-adega #main .lista .item .col-2 ul strong {
+  font-weight: 700;
+}
+.page-template-page-monte-adega #main .lista .item .col-2 a.btn {
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-top: 25px;
+  font-size: 15px;
+  background: #36100a;
+  font-weight: 600;
+  letter-spacing: 1px;
+  padding: 5px 20px 6px 20px;
+}
+.page-template-page-monte-adega #main .lista .item .col-2 a.btn:hover {
+  background: #ff9a00;
+}
+.page-template-page-monte-adega #main .lista .item.amber-lager h4 {
+  background: #c04e02;
+}
+.page-template-page-monte-adega #main .lista .item.american-lager h4 {
+  background: #ffb74c;
+}
+.page-template-page-monte-adega #main .lista .item.munich-elles h4 {
+  background: #ff8518;
+}
+.page-template-page-monte-adega #main .lista .item.pilsen h4 {
+  background: #ffc02c;
+}
+
+/*--- SELECAO / INDICACAO SOMMELIER - INDIVIDUAL ----------------------------------------------------------------------------------*/
+.single-selecao #main h2,
+.single-indicacao_sommelier #main h2 {
+  font-weight: 700;
+}
+.single-selecao #main .content .ficha,
+.single-indicacao_sommelier #main .content .ficha {
+  margin: 40px 0;
+}
+.single-selecao #main .content .ficha .row,
+.single-indicacao_sommelier #main .content .ficha .row {
+  display: flex;
+}
+@media (orientation: portrait) {
+  .single-selecao #main .content .ficha .row,
+  .single-indicacao_sommelier #main .content .ficha .row {
+    flex-direction: column;
+  }
+}
+.single-selecao #main .content .ficha .row .col-1,
+.single-indicacao_sommelier #main .content .ficha .row .col-1 {
+  width: 40%;
+  text-align: center;
+  background: transparent url(img/fundo-laranja.png) bottom center no-repeat;
+  background-size: 80%;
+}
+@media (orientation: portrait) {
+  .single-selecao #main .content .ficha .row .col-1,
+  .single-indicacao_sommelier #main .content .ficha .row .col-1 {
+    width: 100%;
+    margin-bottom: 40px;
+  }
+}
+.single-selecao #main .content .ficha .row .col-1 img,
+.single-indicacao_sommelier #main .content .ficha .row .col-1 img {
+  max-height: 225px;
+  margin-bottom: -10px;
+}
+.single-selecao #main .content .ficha .row .col-2,
+.single-indicacao_sommelier #main .content .ficha .row .col-2 {
+  width: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+@media (orientation: portrait) {
+  .single-selecao #main .content .ficha .row .col-2,
+  .single-indicacao_sommelier #main .content .ficha .row .col-2 {
+    width: 100%;
+    justify-content: center;
+  }
+}
+.single-selecao #main .content .ficha .row .col-2 ul li,
+.single-indicacao_sommelier #main .content .ficha .row .col-2 ul li {
+  margin: 0 0 15px 0;
+}
+
+/*--- FORNECEDORES ----------------------------------------------------------------------------*/
+.page-template-page-fornecedores .content ul.fornecedores {
+  margin-top: 70px;
+}/*# sourceMappingURL=style.css.map */

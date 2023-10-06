@@ -111,6 +111,7 @@
           text-transform: uppercase;
           font-size: 16px;
           font-weight: 400;    
+          background-image: none;
 
           strong{
             font-weight: 800;
@@ -191,7 +192,7 @@ body.act{
 
 
   
-#main-menu-mobile-2{ 
+#main-menu-mobile{ 
 
   @media(orientation:landscape){
     display: none !important;
@@ -200,7 +201,7 @@ body.act{
   overflow-x: scroll;
   background: $vinho;
 
-  ul#menu-menu-principal-2{
+  ul.menu{
     display: flex;
     li{            
       display: inline-block;
@@ -216,6 +217,8 @@ body.act{
         align-items: flex-end;
         background-repeat: no-repeat;
         background-position: center 15px;
+        background-size: auto 50px;
+        justify-content: center;
 
         span{
           width: 100%;
@@ -228,17 +231,7 @@ body.act{
       }
     }
 
-    li.menu-item-188 a {background-image: url(img/ico-selecao.png);}
-    li.menu-item-190 a {background-image: url(img/ico-vinhos.png);}
-    li.menu-item-209 a {background-image: url(img/ico-harmonizacao.png);}
-    li.menu-item-80 a {background-image: url(img/ico-receitas.png);}
-    li.menu-item-193 a {background-image: url(img/ico-dicas.png);}
-
-    li.menu-item-158 a {background-image: url(img/ico-sommelier.png);}
-    li.menu-item-52 a {background-image: url(img/ico-vinhos.png);}
-    li.menu-item-186 a {background-image: url(img/ico-harmonizacao.png);}
-    li.menu-item-53 a {background-image: url(img/ico-receitas.png);}
-    li.menu-item-48 a {background-image: url(img/ico-dicas.png);}
+    
 
 
   }

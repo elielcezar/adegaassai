@@ -7,4 +7,45 @@ Template: tema-principal
 Version: 1.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
-*//*# sourceMappingURL=style.css.map */
+*/
+ul.menu .menu-item-158 a {
+  background-image: url(../tema-principal/img/ico-selecao.png);
+}
+ul.menu .menu-item-52 a {
+  background-image: url(../tema-principal/img/ico-sommelier.png);
+}
+ul.menu .menu-item-186 a {
+  background-image: url(../tema-principal/img/ico-harmonizacao.png?v2);
+}
+ul.menu .menu-item-53 a {
+  background-image: url(../tema-principal/img/ico-receitas.png);
+}
+ul.menu .menu-item-48 a {
+  background-image: url(../tema-principal/img/ico-dicas.png?v2);
+}
+ul.menu .menu-item-418 {
+  background-color: #ff5e00;
+}
+ul.menu .menu-item-418 a {
+  background-image: url(../tema-principal/img/ico-destilados.png?v2);
+}
+ul.menu .menu-item-419 {
+  background-color: #f68c21;
+}
+ul.menu .menu-item-419 a {
+  background-image: url(../tema-principal/img/ico-cervejas.png?v2);
+}
+
+#main-menu-mobile #menu-menu-principal-1 .menu-item-186 a {
+  background-size: auto 55px;
+  padding-bottom: 25px;
+}
+#main-menu-mobile #menu-menu-principal-1 .menu-item-53 a {
+  padding-bottom: 25px;
+}
+#main-menu-mobile #menu-menu-principal-1 .menu-item-418 a {
+  padding-bottom: 25px;
+}
+#main-menu-mobile #menu-menu-principal-1 .menu-item-419 a {
+  padding-bottom: 25px;
+}/*# sourceMappingURL=style.css.map */

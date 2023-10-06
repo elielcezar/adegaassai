@@ -1,6 +1,14 @@
 <?php get_header(); ?>
 
-<section class="banners top desktop carrossel">
+<section class="banners top desktop">
+  <div class="item">   
+    <?php if (function_exists('z_taxonomy_image')){ 
+      z_taxonomy_image(); 
+      }?> 
+  </div>
+</section>
+
+<!--section class="banners top desktop carrossel">
     <div class="item">
       <?php if ( is_singular( array( 'harmonizacao') ) ) { ?>
         <img src="https://megamidiagroup.com.br/adegaassai/para-seu-negocio/wp-content/uploads/sites/3/2023/08/harmonizacao.jpg" alt="">
@@ -8,7 +16,7 @@
         <img src="https://megamidiagroup.com.br/adegaassai/para-voce/wp-content/uploads/sites/2/2023/07/home-para-vocE-2.png" alt="">
       <?php } ?>
   </div>
-  </section>
+  </section-->
 
   <section class="banners top mobile carrossel">
     <div class="item">

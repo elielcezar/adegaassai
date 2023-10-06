@@ -8,3 +8,39 @@ License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 */
 
+ul.menu{
+    .menu-item-188 a{background-image: url(../tema-principal/img/ico-selecao.png);}
+    .menu-item-591 a{background-image: url(../tema-principal/img/ico-sommelier.png);}
+    .menu-item-624 a{background-image: url(../tema-principal/img/ico-harmonizacao.png?v2);}
+    .menu-item-80 a{background-image: url(../tema-principal/img/ico-receitas.png);}
+    .menu-item-625 a{background-image: url(../tema-principal/img/ico-dicas.png?v2);}
+    .menu-item-626{
+        background-color: #ff5e00;
+        a{background-image: url(../tema-principal/img/ico-destilados.png?v2);}
+    }
+    .menu-item-627{
+        background-color: #f68c21;
+        a{background-image: url(../tema-principal/img/ico-cervejas.png?v2);}
+    }
+}
+
+#main-menu-mobile{ 
+    #menu-menu-principal-1{
+        .menu-item-188 a{  
+            padding-bottom: 25px;
+        }
+        .menu-item-624 a{   
+            background-size: auto 55px;     
+            padding-bottom: 25px;
+        }    
+        .menu-item-80{        
+            a{padding-bottom: 25px;}
+        }
+        .menu-item-626{        
+            a{padding-bottom: 25px;}
+        }
+        .menu-item-627{        
+            a{padding-bottom: 25px;}
+        }
+    }   
+}

@@ -470,6 +470,7 @@ img {
   text-transform: uppercase;
   font-size: 16px;
   font-weight: 400;
+  background-image: none;
 }
 .menu-mobile .mainMenu ul li a strong {
   font-weight: 800;
@@ -529,22 +530,22 @@ body.act {
   transform: translateX(0);
 }
 
-#main-menu-mobile-2 {
+#main-menu-mobile {
   overflow-x: scroll;
   background: #831e00;
 }
 @media (orientation: landscape) {
-  #main-menu-mobile-2 {
+  #main-menu-mobile {
     display: none !important;
   }
 }
-#main-menu-mobile-2 ul#menu-menu-principal-2 {
+#main-menu-mobile ul.menu {
   display: flex;
 }
-#main-menu-mobile-2 ul#menu-menu-principal-2 li {
+#main-menu-mobile ul.menu li {
   display: inline-block;
 }
-#main-menu-mobile-2 ul#menu-menu-principal-2 li a {
+#main-menu-mobile ul.menu li a {
   color: #fff !important;
   display: inline-block;
   padding: 40px 15px 15px 15px;
@@ -556,44 +557,16 @@ body.act {
   align-items: flex-end;
   background-repeat: no-repeat;
   background-position: center 15px;
+  background-size: auto 50px;
+  justify-content: center;
 }
-#main-menu-mobile-2 ul#menu-menu-principal-2 li a span {
+#main-menu-mobile ul.menu li a span {
   width: 100%;
   display: inline-block;
   height: 40px;
   display: flex;
   align-items: center;
   justify-content: center;
-}
-#main-menu-mobile-2 ul#menu-menu-principal-2 li.menu-item-188 a {
-  background-image: url(img/ico-selecao.png);
-}
-#main-menu-mobile-2 ul#menu-menu-principal-2 li.menu-item-190 a {
-  background-image: url(img/ico-vinhos.png);
-}
-#main-menu-mobile-2 ul#menu-menu-principal-2 li.menu-item-209 a {
-  background-image: url(img/ico-harmonizacao.png);
-}
-#main-menu-mobile-2 ul#menu-menu-principal-2 li.menu-item-80 a {
-  background-image: url(img/ico-receitas.png);
-}
-#main-menu-mobile-2 ul#menu-menu-principal-2 li.menu-item-193 a {
-  background-image: url(img/ico-dicas.png);
-}
-#main-menu-mobile-2 ul#menu-menu-principal-2 li.menu-item-158 a {
-  background-image: url(img/ico-sommelier.png);
-}
-#main-menu-mobile-2 ul#menu-menu-principal-2 li.menu-item-52 a {
-  background-image: url(img/ico-vinhos.png);
-}
-#main-menu-mobile-2 ul#menu-menu-principal-2 li.menu-item-186 a {
-  background-image: url(img/ico-harmonizacao.png);
-}
-#main-menu-mobile-2 ul#menu-menu-principal-2 li.menu-item-53 a {
-  background-image: url(img/ico-receitas.png);
-}
-#main-menu-mobile-2 ul#menu-menu-principal-2 li.menu-item-48 a {
-  background-image: url(img/ico-dicas.png);
 }
 
 a.btn {
@@ -655,11 +628,12 @@ header .container h1.title {
 header .container h1.title a {
   display: inline-block;
   text-indent: -5000em;
-  background: transparent url(img/logo-adega.png) center no-repeat;
+  background: transparent url(img/logo-adega.png?v2) center no-repeat;
   background-size: 100%;
-  width: 165px;
-  height: 90px;
   transition: all 0.3s;
+  width: 125px;
+  height: 125px;
+  margin-bottom: -25px;
 }
 @media (orientation: portrait) {
   header .container nav {
@@ -781,6 +755,7 @@ header .container nav.right ul li a.btn:hover {
 header.fixed {
   background: rgba(0, 0, 0, 0.9);
   transition: all 0.2s;
+  padding: 5px 0;
 }
 header.fixed .container h1.title {
   margin: 5px !important;
@@ -788,7 +763,12 @@ header.fixed .container h1.title {
 }
 header.fixed .container h1.title a {
   background-size: auto 100%;
-  height: 60px;
+  width: 100px;
+  height: 90px;
+}
+
+body.logged-in header {
+  top: 25px;
 }
 
 /*--- GERAL ---------------------------------------------------------------------------------------------*/
@@ -850,7 +830,7 @@ header.fixed .container h1.title a {
     margin-left: 0;
   }
 }
-#main .sidebar #menu-menu-principal-1 {
+#main .sidebar ul.menu {
   background: #831e00;
   border-bottom-right-radius: 15px;
   border-bottom-left-radius: 15px;
@@ -858,19 +838,19 @@ header.fixed .container h1.title a {
   overflow: hidden;
 }
 @media (orientation: portrait) {
-  #main .sidebar #menu-menu-principal-1 {
+  #main .sidebar ul.menu {
     display: none;
   }
 }
-#main .sidebar #menu-menu-principal-1 li {
+#main .sidebar ul.menu li {
   border-bottom: 1px solid #222;
   padding-right: 15px;
   padding-left: 20px;
 }
-#main .sidebar #menu-menu-principal-1 li:hover {
+#main .sidebar ul.menu li:hover {
   background-color: #611c10;
 }
-#main .sidebar #menu-menu-principal-1 li a {
+#main .sidebar ul.menu li a {
   text-transform: uppercase;
   color: #fff;
   font-weight: 300;
@@ -879,29 +859,12 @@ header.fixed .container h1.title a {
   padding: 30px 0 30px 70px;
   background-position: left center;
   background-repeat: no-repeat;
+  background-size: auto 45px;
 }
 @media (max-width: 1610px) and (orientation: landscape) {
-  #main .sidebar #menu-menu-principal-1 li a {
+  #main .sidebar ul.menu li a {
     padding: 1.8vw 0 1.8vw 70px;
   }
-}
-#main .sidebar #menu-menu-principal-1 li.menu-item-188 a {
-  background-image: url(img/ico-selecao.png);
-}
-#main .sidebar #menu-menu-principal-1 li.menu-item-52 a, #main .sidebar #menu-menu-principal-1 li.menu-item-190 a {
-  background-image: url(img/ico-vinhos.png);
-}
-#main .sidebar #menu-menu-principal-1 li.menu-item-80 a, #main .sidebar #menu-menu-principal-1 li.menu-item-53 a {
-  background-image: url(img/ico-receitas.png);
-}
-#main .sidebar #menu-menu-principal-1 li.menu-item-48 a, #main .sidebar #menu-menu-principal-1 li.menu-item-193 a {
-  background-image: url(img/ico-dicas.png);
-}
-#main .sidebar #menu-menu-principal-1 li.menu-item-158 a {
-  background-image: url(img/ico-sommelier.png?v2);
-}
-#main .sidebar #menu-menu-principal-1 li.menu-item-186 a, #main .sidebar #menu-menu-principal-1 li.menu-item-209 a {
-  background-image: url(img/ico-harmonizacao.png?v2);
 }
 #main .sidebar .podcast {
   margin-bottom: 40px;
@@ -1458,21 +1421,37 @@ li.current-menu-parent,
 /*--- CADASTRE-SE ----------------------------------------------------------------------------------*/
 @media (orientation: portrait) {
   .page-id-14 #main,
-  .page-id-15 #main {
+  .page-id-15 #main,
+  .page-id-72 #main,
+  .page-id-122 #main,
+  .page-id-91 #main,
+  .page-id-133 #main {
     width: 100%;
     padding: 0;
   }
 }
 .page-id-14 #main .container,
-.page-id-15 #main .container {
+.page-id-15 #main .container,
+.page-id-72 #main .container,
+.page-id-122 #main .container,
+.page-id-91 #main .container,
+.page-id-133 #main .container {
   justify-content: center;
 }
 .page-id-14 #main .content,
-.page-id-15 #main .content {
+.page-id-15 #main .content,
+.page-id-72 #main .content,
+.page-id-122 #main .content,
+.page-id-91 #main .content,
+.page-id-133 #main .content {
   text-align: center;
 }
 .page-id-14 #main .content h2,
-.page-id-15 #main .content h2 {
+.page-id-15 #main .content h2,
+.page-id-72 #main .content h2,
+.page-id-122 #main .content h2,
+.page-id-91 #main .content h2,
+.page-id-133 #main .content h2 {
   font-weight: 700;
   font-size: 34px;
   margin-bottom: 50px;
@@ -1480,26 +1459,42 @@ li.current-menu-parent,
   text-align: left;
 }
 .page-id-14 #main .content .wpcf7-form,
-.page-id-15 #main .content .wpcf7-form {
+.page-id-15 #main .content .wpcf7-form,
+.page-id-72 #main .content .wpcf7-form,
+.page-id-122 #main .content .wpcf7-form,
+.page-id-91 #main .content .wpcf7-form,
+.page-id-133 #main .content .wpcf7-form {
   margin: 0 auto;
   width: 100%;
   margin-bottom: 50px;
 }
 @media (orientation: portrait) {
   .page-id-14 #main .content .wpcf7-form,
-  .page-id-15 #main .content .wpcf7-form {
+  .page-id-15 #main .content .wpcf7-form,
+  .page-id-72 #main .content .wpcf7-form,
+  .page-id-122 #main .content .wpcf7-form,
+  .page-id-91 #main .content .wpcf7-form,
+  .page-id-133 #main .content .wpcf7-form {
     overflow: hidden;
   }
 }
 .page-id-14 #main .content .wpcf7-form .row,
-.page-id-15 #main .content .wpcf7-form .row {
+.page-id-15 #main .content .wpcf7-form .row,
+.page-id-72 #main .content .wpcf7-form .row,
+.page-id-122 #main .content .wpcf7-form .row,
+.page-id-91 #main .content .wpcf7-form .row,
+.page-id-133 #main .content .wpcf7-form .row {
   width: 100%;
   padding: 0;
   display: flex;
 }
 @media (orientation: portrait) {
   .page-id-14 #main .content .wpcf7-form .row,
-  .page-id-15 #main .content .wpcf7-form .row {
+  .page-id-15 #main .content .wpcf7-form .row,
+  .page-id-72 #main .content .wpcf7-form .row,
+  .page-id-122 #main .content .wpcf7-form .row,
+  .page-id-91 #main .content .wpcf7-form .row,
+  .page-id-133 #main .content .wpcf7-form .row {
     flex-direction: column;
   }
 }
@@ -1510,14 +1505,34 @@ li.current-menu-parent,
 .page-id-15 #main .content .wpcf7-form .row input[type=text],
 .page-id-15 #main .content .wpcf7-form .row input[type=email],
 .page-id-15 #main .content .wpcf7-form .row input[type=tel],
-.page-id-15 #main .content .wpcf7-form .row select {
+.page-id-15 #main .content .wpcf7-form .row select,
+.page-id-72 #main .content .wpcf7-form .row input[type=text],
+.page-id-72 #main .content .wpcf7-form .row input[type=email],
+.page-id-72 #main .content .wpcf7-form .row input[type=tel],
+.page-id-72 #main .content .wpcf7-form .row select,
+.page-id-122 #main .content .wpcf7-form .row input[type=text],
+.page-id-122 #main .content .wpcf7-form .row input[type=email],
+.page-id-122 #main .content .wpcf7-form .row input[type=tel],
+.page-id-122 #main .content .wpcf7-form .row select,
+.page-id-91 #main .content .wpcf7-form .row input[type=text],
+.page-id-91 #main .content .wpcf7-form .row input[type=email],
+.page-id-91 #main .content .wpcf7-form .row input[type=tel],
+.page-id-91 #main .content .wpcf7-form .row select,
+.page-id-133 #main .content .wpcf7-form .row input[type=text],
+.page-id-133 #main .content .wpcf7-form .row input[type=email],
+.page-id-133 #main .content .wpcf7-form .row input[type=tel],
+.page-id-133 #main .content .wpcf7-form .row select {
   border: 2px solid #696969;
   border-radius: 50px;
   background: #fff;
   padding: 5px 10px;
 }
 .page-id-14 #main .content .wpcf7-form .row input[type=submit],
-.page-id-15 #main .content .wpcf7-form .row input[type=submit] {
+.page-id-15 #main .content .wpcf7-form .row input[type=submit],
+.page-id-72 #main .content .wpcf7-form .row input[type=submit],
+.page-id-122 #main .content .wpcf7-form .row input[type=submit],
+.page-id-91 #main .content .wpcf7-form .row input[type=submit],
+.page-id-133 #main .content .wpcf7-form .row input[type=submit] {
   border-radius: 50px;
   padding: 7px 40px;
   color: #fff;
@@ -1526,25 +1541,41 @@ li.current-menu-parent,
   margin-top: 20px;
 }
 .page-id-14 #main .content .wpcf7-form .row input[type=submit]:hover,
-.page-id-15 #main .content .wpcf7-form .row input[type=submit]:hover {
+.page-id-15 #main .content .wpcf7-form .row input[type=submit]:hover,
+.page-id-72 #main .content .wpcf7-form .row input[type=submit]:hover,
+.page-id-122 #main .content .wpcf7-form .row input[type=submit]:hover,
+.page-id-91 #main .content .wpcf7-form .row input[type=submit]:hover,
+.page-id-133 #main .content .wpcf7-form .row input[type=submit]:hover {
   background: #333;
 }
 .page-id-14 #main .content .wpcf7-form .row .form-item,
-.page-id-15 #main .content .wpcf7-form .row .form-item {
+.page-id-15 #main .content .wpcf7-form .row .form-item,
+.page-id-72 #main .content .wpcf7-form .row .form-item,
+.page-id-122 #main .content .wpcf7-form .row .form-item,
+.page-id-91 #main .content .wpcf7-form .row .form-item,
+.page-id-133 #main .content .wpcf7-form .row .form-item {
   text-align: left;
   width: 100%;
   margin-bottom: 20px;
 }
 @media (orientation: portrait) {
   .page-id-14 #main .content .wpcf7-form .row .form-item,
-  .page-id-15 #main .content .wpcf7-form .row .form-item {
+  .page-id-15 #main .content .wpcf7-form .row .form-item,
+  .page-id-72 #main .content .wpcf7-form .row .form-item,
+  .page-id-122 #main .content .wpcf7-form .row .form-item,
+  .page-id-91 #main .content .wpcf7-form .row .form-item,
+  .page-id-133 #main .content .wpcf7-form .row .form-item {
     width: 100%;
     padding: 10px 0;
     margin: 0;
   }
 }
 .page-id-14 #main .content .wpcf7-form .row .form-item label,
-.page-id-15 #main .content .wpcf7-form .row .form-item label {
+.page-id-15 #main .content .wpcf7-form .row .form-item label,
+.page-id-72 #main .content .wpcf7-form .row .form-item label,
+.page-id-122 #main .content .wpcf7-form .row .form-item label,
+.page-id-91 #main .content .wpcf7-form .row .form-item label,
+.page-id-133 #main .content .wpcf7-form .row .form-item label {
   color: #000;
   font-weight: bold;
   font-size: 18px;
@@ -1552,31 +1583,55 @@ li.current-menu-parent,
   margin: 0 0 5px 5px;
 }
 .page-id-14 #main .content .wpcf7-form .row .form-item span,
-.page-id-15 #main .content .wpcf7-form .row .form-item span {
+.page-id-15 #main .content .wpcf7-form .row .form-item span,
+.page-id-72 #main .content .wpcf7-form .row .form-item span,
+.page-id-122 #main .content .wpcf7-form .row .form-item span,
+.page-id-91 #main .content .wpcf7-form .row .form-item span,
+.page-id-133 #main .content .wpcf7-form .row .form-item span {
   display: inline-block;
   margin-top: 2px;
 }
 @media (orientation: portrait) {
   .page-id-14 #main .content .wpcf7-form .row .form-item span,
-  .page-id-15 #main .content .wpcf7-form .row .form-item span {
+  .page-id-15 #main .content .wpcf7-form .row .form-item span,
+  .page-id-72 #main .content .wpcf7-form .row .form-item span,
+  .page-id-122 #main .content .wpcf7-form .row .form-item span,
+  .page-id-91 #main .content .wpcf7-form .row .form-item span,
+  .page-id-133 #main .content .wpcf7-form .row .form-item span {
     width: 100%;
   }
 }
 .page-id-14 #main .content .wpcf7-form .row .form-item .wpcf7-checkbox span,
-.page-id-15 #main .content .wpcf7-form .row .form-item .wpcf7-checkbox span {
+.page-id-15 #main .content .wpcf7-form .row .form-item .wpcf7-checkbox span,
+.page-id-72 #main .content .wpcf7-form .row .form-item .wpcf7-checkbox span,
+.page-id-122 #main .content .wpcf7-form .row .form-item .wpcf7-checkbox span,
+.page-id-91 #main .content .wpcf7-form .row .form-item .wpcf7-checkbox span,
+.page-id-133 #main .content .wpcf7-form .row .form-item .wpcf7-checkbox span {
   float: left;
   width: 90%;
 }
 .page-id-14 #main .content .wpcf7-form .row .form-item .wpcf7-list-item,
-.page-id-15 #main .content .wpcf7-form .row .form-item .wpcf7-list-item {
+.page-id-15 #main .content .wpcf7-form .row .form-item .wpcf7-list-item,
+.page-id-72 #main .content .wpcf7-form .row .form-item .wpcf7-list-item,
+.page-id-122 #main .content .wpcf7-form .row .form-item .wpcf7-list-item,
+.page-id-91 #main .content .wpcf7-form .row .form-item .wpcf7-list-item,
+.page-id-133 #main .content .wpcf7-form .row .form-item .wpcf7-list-item {
   margin: 0;
 }
 .page-id-14 #main .content .wpcf7-form .row .form-item.checkbox,
-.page-id-15 #main .content .wpcf7-form .row .form-item.checkbox {
+.page-id-15 #main .content .wpcf7-form .row .form-item.checkbox,
+.page-id-72 #main .content .wpcf7-form .row .form-item.checkbox,
+.page-id-122 #main .content .wpcf7-form .row .form-item.checkbox,
+.page-id-91 #main .content .wpcf7-form .row .form-item.checkbox,
+.page-id-133 #main .content .wpcf7-form .row .form-item.checkbox {
   margin-bottom: 0;
 }
 .page-id-14 #main .content .wpcf7-form .row .wpcf7-not-valid-tip,
-.page-id-15 #main .content .wpcf7-form .row .wpcf7-not-valid-tip {
+.page-id-15 #main .content .wpcf7-form .row .wpcf7-not-valid-tip,
+.page-id-72 #main .content .wpcf7-form .row .wpcf7-not-valid-tip,
+.page-id-122 #main .content .wpcf7-form .row .wpcf7-not-valid-tip,
+.page-id-91 #main .content .wpcf7-form .row .wpcf7-not-valid-tip,
+.page-id-133 #main .content .wpcf7-form .row .wpcf7-not-valid-tip {
   color: #333;
 }
 .page-id-14 #main .content .wpcf7-form .row .form-item.nome,
@@ -1586,7 +1641,23 @@ li.current-menu-parent,
 .page-id-15 #main .content .wpcf7-form .row .form-item.nome,
 .page-id-15 #main .content .wpcf7-form .row .form-item.genero,
 .page-id-15 #main .content .wpcf7-form .row .form-item.cpf,
-.page-id-15 #main .content .wpcf7-form .row .form-item.cnpj {
+.page-id-15 #main .content .wpcf7-form .row .form-item.cnpj,
+.page-id-72 #main .content .wpcf7-form .row .form-item.nome,
+.page-id-72 #main .content .wpcf7-form .row .form-item.genero,
+.page-id-72 #main .content .wpcf7-form .row .form-item.cpf,
+.page-id-72 #main .content .wpcf7-form .row .form-item.cnpj,
+.page-id-122 #main .content .wpcf7-form .row .form-item.nome,
+.page-id-122 #main .content .wpcf7-form .row .form-item.genero,
+.page-id-122 #main .content .wpcf7-form .row .form-item.cpf,
+.page-id-122 #main .content .wpcf7-form .row .form-item.cnpj,
+.page-id-91 #main .content .wpcf7-form .row .form-item.nome,
+.page-id-91 #main .content .wpcf7-form .row .form-item.genero,
+.page-id-91 #main .content .wpcf7-form .row .form-item.cpf,
+.page-id-91 #main .content .wpcf7-form .row .form-item.cnpj,
+.page-id-133 #main .content .wpcf7-form .row .form-item.nome,
+.page-id-133 #main .content .wpcf7-form .row .form-item.genero,
+.page-id-133 #main .content .wpcf7-form .row .form-item.cpf,
+.page-id-133 #main .content .wpcf7-form .row .form-item.cnpj {
   width: 50%;
 }
 @media (orientation: portrait) {
@@ -1597,19 +1668,43 @@ li.current-menu-parent,
   .page-id-15 #main .content .wpcf7-form .row .form-item.nome,
   .page-id-15 #main .content .wpcf7-form .row .form-item.genero,
   .page-id-15 #main .content .wpcf7-form .row .form-item.cpf,
-  .page-id-15 #main .content .wpcf7-form .row .form-item.cnpj {
+  .page-id-15 #main .content .wpcf7-form .row .form-item.cnpj,
+  .page-id-72 #main .content .wpcf7-form .row .form-item.nome,
+  .page-id-72 #main .content .wpcf7-form .row .form-item.genero,
+  .page-id-72 #main .content .wpcf7-form .row .form-item.cpf,
+  .page-id-72 #main .content .wpcf7-form .row .form-item.cnpj,
+  .page-id-122 #main .content .wpcf7-form .row .form-item.nome,
+  .page-id-122 #main .content .wpcf7-form .row .form-item.genero,
+  .page-id-122 #main .content .wpcf7-form .row .form-item.cpf,
+  .page-id-122 #main .content .wpcf7-form .row .form-item.cnpj,
+  .page-id-91 #main .content .wpcf7-form .row .form-item.nome,
+  .page-id-91 #main .content .wpcf7-form .row .form-item.genero,
+  .page-id-91 #main .content .wpcf7-form .row .form-item.cpf,
+  .page-id-91 #main .content .wpcf7-form .row .form-item.cnpj,
+  .page-id-133 #main .content .wpcf7-form .row .form-item.nome,
+  .page-id-133 #main .content .wpcf7-form .row .form-item.genero,
+  .page-id-133 #main .content .wpcf7-form .row .form-item.cpf,
+  .page-id-133 #main .content .wpcf7-form .row .form-item.cnpj {
     width: 100%;
   }
 }
 .page-id-14 #main .content .wpcf7-form .row .wpcf7-not-valid-tip,
-.page-id-15 #main .content .wpcf7-form .row .wpcf7-not-valid-tip {
+.page-id-15 #main .content .wpcf7-form .row .wpcf7-not-valid-tip,
+.page-id-72 #main .content .wpcf7-form .row .wpcf7-not-valid-tip,
+.page-id-122 #main .content .wpcf7-form .row .wpcf7-not-valid-tip,
+.page-id-91 #main .content .wpcf7-form .row .wpcf7-not-valid-tip,
+.page-id-133 #main .content .wpcf7-form .row .wpcf7-not-valid-tip {
   display: inline-block;
   border: 2px solid #831e00;
   margin: 5px 0 0 0;
   padding: 5px;
 }
 .page-id-14 #main .content .wpcf7-form .row .wpcf7-response-output,
-.page-id-15 #main .content .wpcf7-form .row .wpcf7-response-output {
+.page-id-15 #main .content .wpcf7-form .row .wpcf7-response-output,
+.page-id-72 #main .content .wpcf7-form .row .wpcf7-response-output,
+.page-id-122 #main .content .wpcf7-form .row .wpcf7-response-output,
+.page-id-91 #main .content .wpcf7-form .row .wpcf7-response-output,
+.page-id-133 #main .content .wpcf7-form .row .wpcf7-response-output {
   background: #831e00;
   padding: 15px 30px;
   border: 2px solid #000;

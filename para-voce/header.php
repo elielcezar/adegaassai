@@ -28,10 +28,10 @@
     <nav class="mainMenu">
       <ul class="menu">
         <li>
-          <a href="https://megamidiagroup.com.br/adegaassai/para-voce" id="para-voce">Para <strong>Você</strong></a>
+          <a href="https://megamidiagroup.com.br/adegaassai/vinhos-para-voce" id="para-voce">Para <strong>Você</strong></a>
         </li>
         <li>
-          <a href="https://megamidiagroup.com.br/adegaassai/para-seu-negocio/" id="para-negocio">Para <strong>seu negócio</strong></a>
+          <a href="https://megamidiagroup.com.br/adegaassai/vinhos-para-seu-negocio/" id="para-negocio">Para <strong>seu negócio</strong></a>
         </li>
       </ul>
       <?php wp_nav_menu(array('theme_location' => 'main-menu')); ?>
@@ -48,8 +48,8 @@
 
         <nav class="left">
             <ul class="select">
-              <li><a href="https://megamidiagroup.com.br/adegaassai/para-voce" class="active para-voce">Home <strong>Para Você</strong></a></li>
-              <li><a href="https://megamidiagroup.com.br/adegaassai/para-seu-negocio/" class="para-negocio">Home <strong>Para Seu Negócio</strong></a></li>
+              <li><a href="https://megamidiagroup.com.br/adegaassai/vinhos-para-voce" class="active para-voce">Home <strong>Para Você</strong></a></li>
+              <li><a href="https://megamidiagroup.com.br/adegaassai/vinhos-para-seu-negocio/" class="para-negocio">Home <strong>Para Seu Negócio</strong></a></li>
             </ul>
             
         </nav>       
