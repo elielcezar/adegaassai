@@ -108,7 +108,7 @@
       slidesToShow: 1,
       slidesToScroll: 1,
       autoplay: true,
-      dots: true,
+      dots: false,
       infinite: true,
       arrows: false,
       adaptiveHeight: true,

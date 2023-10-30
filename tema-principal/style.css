@@ -1009,8 +1009,10 @@ li.current-menu-parent,
 .category #main .content h2,
 .page-template-page-blog #main .content h2,
 .page-template-page-harmonizacao #main .content h2 {
-  margin: 20px 0 50px 0;
-  font-size: 36px;
+  padding: 25px;
+  border: 2px solid #831e00;
+  font-size: 20px;
+  margin: 5px 0 30px 0;
 }
 .category #main .content .item,
 .page-template-page-blog #main .content .item,
@@ -1092,6 +1094,21 @@ li.current-menu-parent,
 }
 
 /*--- HARMONIZACAO --------------------------------------------------------------------------------------------*/
+.page-template-page-harmonizacao #main .content {
+  padding-top: 0;
+}
+.page-template-page-harmonizacao #main .content h2 {
+  background: #ffdfb7;
+  border: none;
+  margin-bottom: 30px;
+  padding: 41px 45px;
+  text-align: left;
+  font-size: 30px;
+  line-height: 38px;
+  font-weight: 800;
+  color: #831e00;
+  margin-top: 0;
+}
 @media (orientation: portrait) {
   .page-template-page-harmonizacao #main .content .item {
     margin-bottom: 40px;
@@ -1125,6 +1142,45 @@ li.current-menu-parent,
   font-style: italic;
   font-size: 19px;
   font-weight: 300;
+}
+.single-harmonizacao .imagem-destaque {
+  position: relative;
+  margin-bottom: 25px;
+}
+.single-harmonizacao .imagem-destaque img {
+  width: 88%;
+  margin-bottom: 25px;
+}
+.single-harmonizacao .imagem-destaque .tacas {
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  display: flex;
+}
+.single-harmonizacao .imagem-destaque .tacas li {
+  display: block;
+  width: 8vw;
+  height: 20vw;
+  text-indent: -5000em;
+  margin-right: 0;
+  min-height: 100px;
+  background-position: bottom center;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+}
+@media (orientation: portrait) {
+  .single-harmonizacao .imagem-destaque .tacas li {
+    width: 14vw;
+    height: 35vw;
+  }
+}
+@media (orientation: landscape) and (max-width: 1600px) {
+  .single-harmonizacao .imagem-destaque .tacas li {
+    width: 9vw;
+    height: 22vw;
+  }
 }
 
 /*--- BLOG INDIVIDUAL ----------------------------------------------------------------------------------*/
@@ -1360,28 +1416,43 @@ li.current-menu-parent,
 .page-template-page-selecao #main .lista .item.sobremesa h4 {
   background: #fa8822;
 }
+.page-template-page-sommelier #main .aviso,
+.page-template-page-selecao #main .aviso {
+  font-size: 12px;
+  font-style: italic;
+}
 
 /*--- SELECAO / INDICACAO SOMMELIER - INDIVIDUAL ----------------------------------------------------------------------------------*/
 .single-selecao #main h2,
-.single-indicacao_sommelier #main h2 {
+.single-selecao_assai #main h2,
+.single-indicacao_sommelier #main h2,
+.single-monte_adega #main h2 {
   font-weight: 700;
 }
 .single-selecao #main .content .ficha,
-.single-indicacao_sommelier #main .content .ficha {
+.single-selecao_assai #main .content .ficha,
+.single-indicacao_sommelier #main .content .ficha,
+.single-monte_adega #main .content .ficha {
   margin: 40px 0;
 }
 .single-selecao #main .content .ficha .row,
-.single-indicacao_sommelier #main .content .ficha .row {
+.single-selecao_assai #main .content .ficha .row,
+.single-indicacao_sommelier #main .content .ficha .row,
+.single-monte_adega #main .content .ficha .row {
   display: flex;
 }
 @media (orientation: portrait) {
   .single-selecao #main .content .ficha .row,
-  .single-indicacao_sommelier #main .content .ficha .row {
+  .single-selecao_assai #main .content .ficha .row,
+  .single-indicacao_sommelier #main .content .ficha .row,
+  .single-monte_adega #main .content .ficha .row {
     flex-direction: column;
   }
 }
 .single-selecao #main .content .ficha .row .col-1,
-.single-indicacao_sommelier #main .content .ficha .row .col-1 {
+.single-selecao_assai #main .content .ficha .row .col-1,
+.single-indicacao_sommelier #main .content .ficha .row .col-1,
+.single-monte_adega #main .content .ficha .row .col-1 {
   width: 40%;
   text-align: center;
   background: transparent url(img/fundo-laranja.png) bottom center no-repeat;
@@ -1389,18 +1460,25 @@ li.current-menu-parent,
 }
 @media (orientation: portrait) {
   .single-selecao #main .content .ficha .row .col-1,
-  .single-indicacao_sommelier #main .content .ficha .row .col-1 {
+  .single-selecao_assai #main .content .ficha .row .col-1,
+  .single-indicacao_sommelier #main .content .ficha .row .col-1,
+  .single-monte_adega #main .content .ficha .row .col-1 {
     width: 100%;
     margin-bottom: 40px;
   }
 }
 .single-selecao #main .content .ficha .row .col-1 img,
-.single-indicacao_sommelier #main .content .ficha .row .col-1 img {
+.single-selecao_assai #main .content .ficha .row .col-1 img,
+.single-indicacao_sommelier #main .content .ficha .row .col-1 img,
+.single-monte_adega #main .content .ficha .row .col-1 img {
   max-height: 225px;
   margin-bottom: -10px;
+  width: auto;
 }
 .single-selecao #main .content .ficha .row .col-2,
-.single-indicacao_sommelier #main .content .ficha .row .col-2 {
+.single-selecao_assai #main .content .ficha .row .col-2,
+.single-indicacao_sommelier #main .content .ficha .row .col-2,
+.single-monte_adega #main .content .ficha .row .col-2 {
   width: 60%;
   display: flex;
   align-items: center;
@@ -1408,13 +1486,17 @@ li.current-menu-parent,
 }
 @media (orientation: portrait) {
   .single-selecao #main .content .ficha .row .col-2,
-  .single-indicacao_sommelier #main .content .ficha .row .col-2 {
+  .single-selecao_assai #main .content .ficha .row .col-2,
+  .single-indicacao_sommelier #main .content .ficha .row .col-2,
+  .single-monte_adega #main .content .ficha .row .col-2 {
     width: 100%;
     justify-content: center;
   }
 }
 .single-selecao #main .content .ficha .row .col-2 ul li,
-.single-indicacao_sommelier #main .content .ficha .row .col-2 ul li {
+.single-selecao_assai #main .content .ficha .row .col-2 ul li,
+.single-indicacao_sommelier #main .content .ficha .row .col-2 ul li,
+.single-monte_adega #main .content .ficha .row .col-2 ul li {
   margin: 0 0 15px 0;
 }
 
@@ -1889,6 +1971,17 @@ footer .container .row .col-5 a.btn:hover {
   text-decoration: none;
   background: #333;
   color: #fff !important;
+}
+
+.footer-1 {
+  background: #391108;
+}
+.footer-1 p {
+  margin: 0;
+  text-align: center;
+  font-size: 10px;
+  color: #fff;
+  letter-spacing: 1px;
 }
 
 .footer-2 {

@@ -42,3 +42,18 @@ ul.menu{
         }
     }   
 }
+
+/*--- HARMONIZACAO INDIVIDUAL ----------------------------------------------------------------------------------*/
+.single-harmonizacao{
+    .imagem-destaque{
+      .tacas{ 
+        li{        
+            &.item-140{background-image: url(img/champagne.png);}
+            &.item-113{background-image: url(img/vinho-branco.png);}
+            &.item-198{background-image: url(img/vinho-rose.png);}
+            &.item-201{background-image: url(img/vinho-tinto.png);}   
+            &.item-92{background-image: url(img/vinho-sobremesa.png);}   
+        }      
+      }
+    }
+  }

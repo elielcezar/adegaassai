@@ -48,4 +48,21 @@ ul.menu .menu-item-419 a {
 }
 #main-menu-mobile #menu-menu-principal-1 .menu-item-419 a {
   padding-bottom: 25px;
+}
+
+/*--- HARMONIZACAO INDIVIDUAL ----------------------------------------------------------------------------------*/
+.single-harmonizacao .imagem-destaque .tacas li.item-140 {
+  background-image: url(img/champagne.png);
+}
+.single-harmonizacao .imagem-destaque .tacas li.item-113 {
+  background-image: url(img/vinho-branco.png);
+}
+.single-harmonizacao .imagem-destaque .tacas li.item-198 {
+  background-image: url(img/vinho-rose.png);
+}
+.single-harmonizacao .imagem-destaque .tacas li.item-201 {
+  background-image: url(img/vinho-tinto.png);
+}
+.single-harmonizacao .imagem-destaque .tacas li.item-92 {
+  background-image: url(img/vinho-sobremesa.png);
 }/*# sourceMappingURL=style.css.map */

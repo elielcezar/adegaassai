@@ -62,12 +62,11 @@ Template Name: Selecao Assai
                 if ($loop->have_posts()) :
                 while ($loop->have_posts()) : $loop->the_post(); ?>
                 	
-                <?php $terms = get_the_terms( $post->ID, 'tipo_destilado' ); ?>
+                <?php $terms = get_the_terms( $post->ID, 'tipo_cerveja' ); ?>
 
                 <div class="item<?php foreach( $terms as $term ) echo ' ' . $term->slug; ?>">
-                    <div class="tipo">
-                        <!--h4><?php the_terms( $post->ID, 'tipo_destilado'); ?></h4-->
-                        <h4><?php echo strip_tags(get_the_term_list( $post->ID, 'tipo_destilado', ' ',', ')); ?></h4>
+                    <div class="tipo">                        
+                        <h4><?php echo strip_tags(get_the_term_list( $post->ID, 'tipo_cerveja', ' ',', ')); ?></h4>
                     </div>
                     <div class="row">
                         <div class="col-1">
@@ -80,13 +79,13 @@ Template Name: Selecao Assai
                                 <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
                             </h3>   
                             
-                            <ul class="ficha">                               
+                            <ul class="ficha">
                                 <li>
                                 <strong>Teor Alcoólico:</strong> <?php the_field('teor_alcoolico'); ?>
                                 </li>
                                 <li>
-                                <strong>Produtor:</strong> <?php the_field('produtor'); ?>
-                                </li>
+                                <strong>Amargor:</strong> <?php the_field('amargor'); ?>
+                                </li>                                
                             </ul>
 
                             <a href="<?php the_permalink(); ?>" class="btn">Saiba mais</a>
@@ -94,12 +93,13 @@ Template Name: Selecao Assai
                         </div>
                     </div>
                 </div>
-            <?php endwhile;                
+              <?php endwhile;                
                 endif;                            
                 ?>
             </div>
         </div>
 
+        <p class="aviso">Consulte disponibilidade na loja Assaí mais próxima de você. </p>
 
     </div>
 

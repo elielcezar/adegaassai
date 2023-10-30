@@ -17,7 +17,13 @@ Template Name: Homepage Custom
       $url = $image['url'];
   ?>
   <div class="item">
-    <img src="<?php echo $full_image_url; ?>" alt="">
+    <?php if($url){ ?>    
+    <a href="<?php echo $url; ?>">
+      <img src="<?php echo $full_image_url; ?>" alt="">
+    </a>
+    <?php } else { ?>
+      <img src="<?php echo $full_image_url; ?>" alt="">
+    <?php } ?>
   </div>
   <?php endforeach;
   endif; ?>
@@ -25,7 +31,7 @@ Template Name: Homepage Custom
 
 <section class="banners top mobile">
     <div class="item">
-    <a href=""><img src="https://megamidiagroup.com.br/adegaassai/para-seu-negocio/wp-content/uploads/sites/3/2023/07/v3.jpg" alt=""></a>
+    <img src="<?php echo site_url(); ?>/wp-content/uploads/sites/6/2023/10/cerveja.jpg">
   </div>
   </section>
 
@@ -71,9 +77,9 @@ Template Name: Homepage Custom
       <div class="card left blog-da-adega">
         <div class="col-1 info">
           <h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
-          <!--h3><?php the_field('subtitulo'); ?></h3-->
-          <!--p><?php the_field('chamada'); ?></p-->
-          <p><?php the_excerpt(); ?></p>
+          <h3><?php the_field('subtitulo'); ?></h3>
+          <p><?php the_field('chamada'); ?></p>
+          <!--p><?php the_excerpt(); ?></p-->
           <a href="<?php the_permalink(); ?>" class="btn">Saiba mais</a>
         </div>
         <div class="col-2 img">
@@ -136,7 +142,7 @@ Template Name: Homepage Custom
       <?php
         $loop = new WP_Query(array(
           'post_type' => 'post',          
-          'category_name' => 'drinks',
+          'category_name' => 'receitas',
           'posts_per_page' => 1,
           'order' => 'DESC'
         ));

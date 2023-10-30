@@ -112,9 +112,9 @@ header .container nav.left .select li a:hover {
 .page-template-page-blog,
 .page-template-page-harmonizacao{
     #main{
-        .content{
+        .content{          
             .item{
-                background: $amarelinho;
+                background: $amarelinho;                
             }
         }
     }
@@ -197,7 +197,7 @@ header .container nav.left .select li a:hover {
           justify-content: center;
           background: #f68c21;           
           min-height: 320px;
-          position: relative;
+          position: relative;          
 
           @media(max-width:1610px) and (orientation:landscape){
             min-height: 19vw;
@@ -221,7 +221,8 @@ header .container nav.left .select li a:hover {
             font-size: 15px;
             line-height: 16px;
             margin: 0;
-            margin-bottom: 12px;            
+            margin-bottom: 12px;  
+            text-align: left;          
 
             @media(orientation:portrait){
               font-size: 14px;
@@ -240,6 +241,7 @@ header .container nav.left .select li a:hover {
             color: #fff;
             font-weight: 300;
             font-size: 14px;
+            text-align: left;          
 
             strong{
               font-weight: 700;
@@ -261,7 +263,8 @@ header .container nav.left .select li a:hover {
           }
         }  
         
-        &.amber-lager{
+        &.amber-lager,
+        &.amber{
           h4{background: #c04e02;}
         }       
         &.american-lager{
@@ -334,6 +337,45 @@ header .container nav.left .select li a:hover {
     }
   }
 }
+
+/*--- HARMONIZACAO INDIVIDUAL ----------------------------------------------------------------------------------*/
+.single-harmonizacao{
+  .imagem-destaque{    
+    .tacas{ 
+      li{        
+          &.item-314{
+            background-image: url(img/cerveja-clara.png);
+            width: 4vw;
+            @media(orientation:portrait){
+              width: 10vw;
+            }
+          }
+          &.item-308{
+            background-image: url(img/cerveja-trigo.png);
+            width: 5vw;
+            @media(orientation:portrait){
+              width: 12vw;
+            }
+          }
+          &.item-311{
+            background-image: url(img/cerveja-escura.png);
+            width: 6vw;
+            @media(orientation:portrait){
+              width: 14vw;
+            }
+          }
+          &.item-305{
+            background-image: url(img/cerveja-especial.png);
+            width: 4vw;
+            @media(orientation:portrait){
+              width: 10vw;
+            }
+          }   
+      }      
+    }
+  }
+}
+
 
 
 /*--- FORNECEDORES ----------------------------------------------------------------------------*/

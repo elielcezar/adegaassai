@@ -17,7 +17,13 @@ Template Name: Homepage Custom
       $url = $image['url'];
   ?>
   <div class="item">
-    <img src="<?php echo $full_image_url; ?>" alt="">
+    <?php if($url){ ?>    
+    <a href="<?php echo $url; ?>">
+      <img src="<?php echo $full_image_url; ?>" alt="">
+    </a>
+    <?php } else { ?>
+      <img src="<?php echo $full_image_url; ?>" alt="">
+    <?php } ?>
   </div>
   <?php endforeach;
   endif; ?>
@@ -25,7 +31,7 @@ Template Name: Homepage Custom
 
 <section class="banners top mobile">
     <div class="item">
-    <a href=""><img src="https://megamidiagroup.com.br/adegaassai/para-seu-negocio/wp-content/uploads/sites/3/2023/07/v3.jpg" alt=""></a>
+      <img src="<?php echo site_url(); ?>/wp-content/uploads/sites/6/2023/10/cerveja.jpg">
   </div>
   </section>
 

@@ -2,26 +2,26 @@
 
 <section class="banners top desktop carrossel">
     <div class="item">
-    <a href=""><img src="https://megamidiagroup.com.br/adegaassai/para-seu-negocio/wp-content/uploads/sites/3/2023/08/selecao-assai.jpg" alt=""></a>
+    <a href=""><img src="<?php echo site_url(); ?>/wp-content/uploads/sites/7/2023/09/selecao-assai.png" alt=""></a>
   </div>
   </section>
 
   <section class="banners top mobile carrossel">
     <div class="item">
-    <img src="https://megamidiagroup.com.br/adegaassai/para-seu-negocio/wp-content/uploads/sites/3/2023/07/v3.jpg" alt="">
+    <img src="<?php echo site_url(); ?>/wp-content/uploads/sites/7/2023/10/cerveja.jpg" alt="">
   </div>
   </section>
 
 <div id="main">
+
 <?php get_template_part( 'main-menu-mobile' ); ?>   
 
   <div class="container">
-
   <div class="sidebar">
       <?php get_template_part( 'cadastrese' ); ?>     
     </div>
 
-
+    
     <div class="content">  
 
     <h2><?php the_title(); ?></h2>
@@ -29,21 +29,19 @@
     <div class="ficha">
       <div class="row">
         <div class="col-1">
-          <img src="<?php the_field('foto_garrafa'); ?>" />
+        <?php the_post_thumbnail(''); ?>
         </div>
         <div class="col-2">
           <ul>
             <li>
-              <strong>País de Origem:</strong> <?php the_field('pais_de_origem'); ?>
-            </li>
-            <li>
-              <strong>Uva:</strong> <?php the_field('uva'); ?>
-            </li>
+              <?php $terms = get_the_terms( $post->ID, 'tipo_cerveja' ); ?>
+              <strong>Estilo da Cerveja:</strong> <?php echo strip_tags(get_the_term_list( $post->ID, 'tipo_cerveja', ' ',', ')); ?>
+            </li>            
             <li>
               <strong>Teor Alcoólico:</strong> <?php the_field('teor_alcoolico'); ?>
             </li>
             <li>
-              <strong>Vinícola:</strong> <?php the_field('vinicola'); ?>
+              <strong>Amargor:</strong> <?php the_field('amargor'); ?>
             </li>
           </ul>
         </div>
@@ -56,8 +54,7 @@
     
     </div>
 
-   
-
+    
 </div>
 </div>
 

@@ -315,4 +315,42 @@ header .container nav.left .select li a:hover {
 /*--- FORNECEDORES ----------------------------------------------------------------------------*/
 .page-template-page-fornecedores .content ul.fornecedores {
   margin-top: 70px;
+}
+
+/*--- HARMONIZACAO INDIVIDUAL ----------------------------------------------------------------------------------*/
+.single-harmonizacao .imagem-destaque .tacas li.item-314 {
+  background-image: url(img/cerveja-clara.png);
+  width: 4vw;
+}
+@media (orientation: portrait) {
+  .single-harmonizacao .imagem-destaque .tacas li.item-314 {
+    width: 10vw;
+  }
+}
+.single-harmonizacao .imagem-destaque .tacas li.item-308 {
+  background-image: url(img/cerveja-trigo.png);
+  width: 5vw;
+}
+@media (orientation: portrait) {
+  .single-harmonizacao .imagem-destaque .tacas li.item-308 {
+    width: 12vw;
+  }
+}
+.single-harmonizacao .imagem-destaque .tacas li.item-311 {
+  background-image: url(img/cerveja-escura.png);
+  width: 6vw;
+}
+@media (orientation: portrait) {
+  .single-harmonizacao .imagem-destaque .tacas li.item-311 {
+    width: 14vw;
+  }
+}
+.single-harmonizacao .imagem-destaque .tacas li.item-305 {
+  background-image: url(img/cerveja-especial.png);
+  width: 4vw;
+}
+@media (orientation: portrait) {
+  .single-harmonizacao .imagem-destaque .tacas li.item-305 {
+    width: 10vw;
+  }
 }/*# sourceMappingURL=style.css.map */

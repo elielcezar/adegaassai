@@ -1,8 +1,15 @@
 <?php get_header(); ?>
 
 
+<section class="banners top desktop">
+  <div class="item">   
+    <?php if (function_exists('z_taxonomy_image')){ 
+      z_taxonomy_image(); 
+      }?> 
+  </div>
+</section>
 
-<section class="banners top desktop carrossel">
+<!--section class="banners top desktop carrossel">
   <div class="item">
     <?php if (is_category('blog-da-adega')) : ?>
       <img src="https://megamidiagroup.com.br/adegaassai/para-seu-negocio/wp-content/uploads/sites/3/2023/08/blog-da-adega.png" alt="">
@@ -12,7 +19,7 @@
       <img src="https://megamidiagroup.com.br/adegaassai/para-seu-negocio/wp-content/uploads/sites/3/2023/08/receitas.jpg" alt="">
     <?php endif; ?>
   </div>
-</section>
+</section-->
 
 
 <!--section class="banners top desktop carrossel">

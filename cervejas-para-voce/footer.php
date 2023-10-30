@@ -52,6 +52,11 @@
     </div>
 </footer>
 
+<div class="footer-1">
+    <div class="conteiner">
+        <p>BEBA COM MODERAÇÃO. A VENDA E O CONSUMO DE BEBIDA ALCOÓLICA SÃO PROIBIDOS PARA MENORES.</p>
+    </div>
+</div>
 <div class="footer-2">                
     <div class="container">
         <p>Powered by: <a href="https://www.megamidia.com.br/" target="_blank">MegaMidia Group</a></p>          

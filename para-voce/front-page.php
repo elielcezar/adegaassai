@@ -17,7 +17,13 @@ Template Name: Homepage Custom
       $url = $image['url'];
   ?>
   <div class="item">
-    <img src="<?php echo $full_image_url; ?>" alt="">
+    <?php if($url){ ?>    
+    <a href="<?php echo $url; ?>">
+      <img src="<?php echo $full_image_url; ?>" alt="">
+    </a>
+    <?php } else { ?>
+      <img src="<?php echo $full_image_url; ?>" alt="">
+    <?php } ?>
   </div>
   <?php endforeach;
   endif; ?>
@@ -91,7 +97,7 @@ Template Name: Homepage Custom
           'post_type' => 'post',          
           'category_name' => 'tipos-de-vinhos',
           'posts_per_page' => 1,
-          'order' => 'DESC'
+          'orderby' => 'rand'
         ));
         if ($loop->have_posts()) :
           while ($loop->have_posts()) : $loop->the_post(); ?>

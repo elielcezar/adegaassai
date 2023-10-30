@@ -100,6 +100,8 @@ Template Name: Selecao Assai
             </div>
         </div>
 
+        <p class="aviso">Consulte disponibilidade na loja Assaí mais próxima de você. </p>
+
 
     </div>
 

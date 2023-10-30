@@ -227,6 +227,7 @@ header .container nav.left .select li a:hover {
   line-height: 16px;
   margin: 0;
   margin-bottom: 12px;
+  text-align: left;
 }
 @media (orientation: portrait) {
   .page-template-page-monte-adega #main .lista .item .col-2 h3,
@@ -248,6 +249,7 @@ header .container nav.left .select li a:hover {
   color: #fff;
   font-weight: 300;
   font-size: 14px;
+  text-align: left;
 }
 .page-template-page-monte-adega #main .lista .item .col-2 ul strong,
 .page-template-page-selecao #main .lista .item .col-2 ul strong {
@@ -268,8 +270,9 @@ header .container nav.left .select li a:hover {
 .page-template-page-selecao #main .lista .item .col-2 a.btn:hover {
   background: #ff9a00;
 }
-.page-template-page-monte-adega #main .lista .item.amber-lager h4,
-.page-template-page-selecao #main .lista .item.amber-lager h4 {
+.page-template-page-monte-adega #main .lista .item.amber-lager h4, .page-template-page-monte-adega #main .lista .item.amber h4,
+.page-template-page-selecao #main .lista .item.amber-lager h4,
+.page-template-page-selecao #main .lista .item.amber h4 {
   background: #c04e02;
 }
 .page-template-page-monte-adega #main .lista .item.american-lager h4,
@@ -340,6 +343,44 @@ header .container nav.left .select li a:hover {
 .single-selecao #main .content .ficha .row .col-2 ul li,
 .single-indicacao_sommelier #main .content .ficha .row .col-2 ul li {
   margin: 0 0 15px 0;
+}
+
+/*--- HARMONIZACAO INDIVIDUAL ----------------------------------------------------------------------------------*/
+.single-harmonizacao .imagem-destaque .tacas li.item-314 {
+  background-image: url(img/cerveja-clara.png);
+  width: 4vw;
+}
+@media (orientation: portrait) {
+  .single-harmonizacao .imagem-destaque .tacas li.item-314 {
+    width: 10vw;
+  }
+}
+.single-harmonizacao .imagem-destaque .tacas li.item-308 {
+  background-image: url(img/cerveja-trigo.png);
+  width: 5vw;
+}
+@media (orientation: portrait) {
+  .single-harmonizacao .imagem-destaque .tacas li.item-308 {
+    width: 12vw;
+  }
+}
+.single-harmonizacao .imagem-destaque .tacas li.item-311 {
+  background-image: url(img/cerveja-escura.png);
+  width: 6vw;
+}
+@media (orientation: portrait) {
+  .single-harmonizacao .imagem-destaque .tacas li.item-311 {
+    width: 14vw;
+  }
+}
+.single-harmonizacao .imagem-destaque .tacas li.item-305 {
+  background-image: url(img/cerveja-especial.png);
+  width: 4vw;
+}
+@media (orientation: portrait) {
+  .single-harmonizacao .imagem-destaque .tacas li.item-305 {
+    width: 10vw;
+  }
 }
 
 /*--- FORNECEDORES ----------------------------------------------------------------------------*/

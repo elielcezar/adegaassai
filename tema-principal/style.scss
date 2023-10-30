@@ -521,10 +521,12 @@ li.current-menu-parent,
     .content{
       
       h2{
-        margin: 20px 0 50px 0;
-        font-size: 36px;
+        padding: 25px;
+        border: 2px solid #831e00;
+        font-size: 20px;
+        margin: 5px 0 30px 0;
       }
-        
+
       .item{
         display: flex;  
         justify-content: space-between;
@@ -584,6 +586,19 @@ li.current-menu-parent,
 .page-template-page-harmonizacao {
   #main{
     .content{
+      padding-top: 0;
+      h2{
+        background: #ffdfb7;
+        border: none;
+        margin-bottom: 30px;
+        padding: 41px 45px;
+        text-align: left;
+        font-size: 30px;
+        line-height: 38px;
+        font-weight: 800;
+        color: #831e00;
+        margin-top: 0;
+      }
       .item{
         @media(orientation:portrait){
           margin-bottom: 40px;
@@ -629,6 +644,45 @@ li.current-menu-parent,
       font-style: italic;
       font-size: 19px;
       font-weight: 300;
+    }
+  }
+  .imagem-destaque{
+    position: relative;
+    margin-bottom: 25px;
+
+    img{
+      width: 88%;
+      margin-bottom: 25px;
+    }
+
+    .tacas{      
+      margin: 0;
+      padding: 0;
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      display: flex;      
+
+      li{
+        display: block;        
+        width: 8vw;
+        height: 20vw;
+        text-indent: -5000em;
+        margin-right: 0;
+        min-height: 100px;
+        background-position: bottom center;
+        background-repeat: no-repeat;     
+        background-size: 100% auto; 
+        
+        @media(orientation:portrait){
+          width: 14vw;
+          height: 35vw;
+        }
+        @media(orientation:landscape) and (max-width:1600px){
+          width: 9vw;
+          height: 22vw;
+        }
+      }      
     }
   }
 }
@@ -868,12 +922,19 @@ li.current-menu-parent,
         }
       }      
     }
+
+    .aviso{
+      font-size: 12px;
+      font-style: italic;
+    }
   }
 }
 
 /*--- SELECAO / INDICACAO SOMMELIER - INDIVIDUAL ----------------------------------------------------------------------------------*/
 .single-selecao,
-.single-indicacao_sommelier{
+.single-selecao_assai,
+.single-indicacao_sommelier,
+.single-monte_adega{
   #main{
     h2{
       font-weight: 700;
@@ -903,6 +964,7 @@ li.current-menu-parent,
             img{
               max-height: 225px;
               margin-bottom: -10px;
+              width: auto;
             }
           }
           .col-2{
@@ -1280,6 +1342,17 @@ footer {
   
 }
 
+.footer-1{
+  background: #391108;
+
+  p{
+    margin: 0;
+    text-align: center;
+    font-size: 10px;
+    color: #fff;
+    letter-spacing: 1px;
+  }
+}
 
 .footer-2{
   background: #551401;

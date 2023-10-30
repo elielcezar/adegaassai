@@ -68,7 +68,10 @@ Template Name: Harmonizacoes
               <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
           </h3>
           <p class="chamada"><?php the_field('chamada'); ?></p>
-          <div class="harmoniza-com">
+
+          <a href="<?php the_permalink(); ?>" class="btn">Saiba mais</a>
+          
+          <!--div class="harmoniza-com">
             <ul>
               <?php
               $featured_posts = get_field('harmoniza_com');
@@ -84,7 +87,8 @@ Template Name: Harmonizacoes
                   <?php wp_reset_postdata(); ?>              
               <?php endif; ?>
             </ul>
-          </div>                      
+          </div-->  
+
         </div>
       </div>
       <?php endwhile;                

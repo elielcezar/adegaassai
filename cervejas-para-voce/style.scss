@@ -107,7 +107,7 @@ header .container nav.left .select li a:hover {
 .page-template-page-blog,
 .page-template-page-harmonizacao{
     #main{
-        .content{
+        .content{            
             .item{
                 background: $amarelinho;
             }
@@ -334,6 +334,45 @@ header .container nav.left .select li a:hover {
   .content{
     ul.fornecedores{
       margin-top: 70px;
+    }
+  }
+}
+
+
+/*--- HARMONIZACAO INDIVIDUAL ----------------------------------------------------------------------------------*/
+.single-harmonizacao{
+  .imagem-destaque{
+    .tacas{ 
+      li{        
+          &.item-314{
+            background-image: url(img/cerveja-clara.png);
+            width: 4vw;
+            @media(orientation:portrait){
+              width: 10vw;
+            }
+          }
+          &.item-308{
+            background-image: url(img/cerveja-trigo.png);
+            width: 5vw;
+            @media(orientation:portrait){
+              width: 12vw;
+            }
+          }
+          &.item-311{
+            background-image: url(img/cerveja-escura.png);
+            width: 6vw;
+            @media(orientation:portrait){
+              width: 14vw;
+            }
+          }
+          &.item-305{
+            background-image: url(img/cerveja-especial.png);
+            width: 4vw;
+            @media(orientation:portrait){
+              width: 10vw;
+            }
+          }   
+      }      
     }
   }
 }
