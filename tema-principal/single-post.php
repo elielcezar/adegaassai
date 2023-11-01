@@ -8,23 +8,24 @@
 <section class="banners top desktop carrossel">
   <div class="item">
 
+  
     <?php if(($theme_name == "Para Você") || ($theme_name == "Para Seu Negócio")) { ?>
         <?php if (in_category('blog-da-adega')) : ?>
-          <img src="<?php echo site_url(); ?>/wp-content/uploads/sites/3/2023/08/blog-da-adega.png" alt="">
+          <img src="<?php echo site_url(); ?>/wp-content/uploads/sites/2/2023/10/blog-da-adega.png" alt="">
         <?php elseif (in_category('tipos-de-vinhos')) : ?>
-          <img src="<?php echo site_url(); ?>/wp-content/uploads/sites/3/2023/08/tipos-de-vinhos.jpg" alt="">
+          <img src="<?php echo site_url(); ?>/wp-content/uploads/sites/2/2023/10/tipos-de-vinhos.jpg" alt="">
         <?php elseif (in_category('receitas')) : ?>
-          <img src="<?php echo site_url(); ?>/wp-content/uploads/sites/3/2023/08/receitas.jpg" alt="">
+          <img src="<?php echo site_url(); ?>/wp-content/uploads/sites/2/2023/10/receitas.jpg" alt="">
         <?php endif; ?>
-    <?php } ?>   
-    
+    <?php } ?>           
+
     <?php if(($theme_name == "Destilados Para Você") || ($theme_name == "Destilados Para Seu Negócio")) { ?>
         <?php if (in_category('blog-da-adega')) : ?>
-          <img src="<?php echo site_url(); ?>/wp-content/uploads/sites/4/2023/09/blog-da-adega.png" alt="">
+          <img src="<?php echo site_url(); ?>/wp-content/uploads/sites/4/2023/10/blog-da-adega-dest.png" alt="">
         <?php elseif (in_category('tipos-de-destilados')) : ?>
-          <img src="<?php echo site_url(); ?>/wp-content/uploads/sites/4/2023/09/tipos-de-destilados.jpg" alt="">
+          <img src="<?php echo site_url(); ?>/wp-content/uploads/sites/5/2023/10/tipos-de-destilados.jpg" alt="">
         <?php elseif (in_category('drinks')) : ?>
-          <img src="<?php echo site_url(); ?>/wp-content/uploads/sites/4/2023/09/drinks.png" alt="">
+          <img src="<?php echo site_url(); ?>/wp-content/uploads/sites/5/2023/10/drinks.png" alt="">
         <?php endif; ?>
     <?php } ?>   
 
@@ -32,9 +33,9 @@
         <?php if (in_category('blog-da-adega')) : ?>
           <img src="<?php echo site_url(); ?>/wp-content/uploads/sites/7/2023/09/blog-da-adega.jpg" alt="">
         <?php elseif (in_category('tipos-de-cervejas')) : ?>
-          <img src="<?php echo site_url(); ?>/wp-content/uploads/sites/7/2023/09/tipos-de-cervejas.jpg" alt="">
+          <img src="<?php echo site_url(); ?>/wp-content/uploads/sites/6/2023/10/tipos-de-cervejas.png" alt="">
         <?php elseif (in_category('receitas')) : ?>
-          <img src="<?php echo site_url(); ?>/wp-content/uploads/sites/7/2023/10/receitas.png" alt="">
+          <img src="<?php echo site_url(); ?>/wp-content/uploads/sites/6/2023/10/receitas-cerveja.png" alt="">
         <?php endif; ?>
     <?php } ?>   
     
@@ -63,7 +64,7 @@
 
   <div class="container">
   <div class="sidebar">
-      <?php get_template_part( 'cadastrese' ); ?>     
+      <?php get_template_part( 'sidebar' ); ?>     
     </div>
 
     

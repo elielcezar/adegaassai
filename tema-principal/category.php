@@ -39,10 +39,12 @@
 
   <div class="container">
   <div class="sidebar">
-      <?php get_template_part( 'cadastrese' ); ?>     
+      <?php get_template_part( 'sidebar' ); ?>     
     </div>
     
     <div class="content">  
+      <h2><?php echo category_description(); ?></h2>
+
       <div class="wrapper">
     <?php
       if (have_posts()) :

@@ -41,40 +41,28 @@ header .container nav.left .select li a:hover {
   background: transparent;
 }
 
-#main .sidebar ul.menu,
-#main-menu-mobile ul.menu {
-  background: #ff5e00;
-}
-#main .sidebar ul.menu .menu-item-72 a,
-#main-menu-mobile ul.menu .menu-item-72 a {
+ul.menu .menu-item-72 a {
   background-image: url(../tema-principal/img/ico-selecao.png);
 }
-#main .sidebar ul.menu .menu-item-56 a,
-#main-menu-mobile ul.menu .menu-item-56 a {
+ul.menu .menu-item-222 a {
   background-image: url(../tema-principal/img/ico-tipos.png);
 }
-#main .sidebar ul.menu .menu-item-57 a,
-#main-menu-mobile ul.menu .menu-item-57 a {
+ul.menu .menu-item-223 a {
   background-image: url(../tema-principal/img/ico-drinks.png);
 }
-#main .sidebar ul.menu .menu-item-58 a,
-#main-menu-mobile ul.menu .menu-item-58 a {
+ul.menu .menu-item-221 a {
   background-image: url(../tema-principal/img/ico-dicas.png);
 }
-#main .sidebar ul.menu .menu-item-55 a,
-#main-menu-mobile ul.menu .menu-item-55 a {
+ul.menu .menu-item-55 a {
   background-image: url(../tema-principal/img/ico-vinhos.png?v2);
 }
-#main .sidebar ul.menu .menu-item-55,
-#main-menu-mobile ul.menu .menu-item-55 {
+ul.menu .menu-item-55 {
   background-color: #831e00;
 }
-#main .sidebar ul.menu .menu-item-139,
-#main-menu-mobile ul.menu .menu-item-139 {
+ul.menu .menu-item-139 {
   background-color: #f68c21;
 }
-#main .sidebar ul.menu .menu-item-139 a,
-#main-menu-mobile ul.menu .menu-item-139 a {
+ul.menu .menu-item-139 a {
   background-image: url(../tema-principal/img/ico-cervejas.png);
 }
 
@@ -114,11 +102,28 @@ header .container nav.left .select li a:hover {
 .page-template-page-selecao #main {
   padding: 0;
 }
+.page-template-page-monte-adega #main .content,
+.page-template-page-selecao #main .content {
+  padding-top: 0;
+}
 @media (orientation: portrait) {
   .page-template-page-monte-adega #main .content,
   .page-template-page-selecao #main .content {
     padding: 0;
   }
+}
+.page-template-page-monte-adega #main .content h2,
+.page-template-page-selecao #main .content h2 {
+  background: #ffdfb7;
+  border: none;
+  margin-bottom: 30px;
+  padding: 41px 45px;
+  text-align: left;
+  font-size: 30px;
+  line-height: 38px;
+  font-weight: 800;
+  color: #831e00;
+  margin-top: 0;
 }
 .page-template-page-monte-adega #main .lista h3,
 .page-template-page-selecao #main .lista h3 {

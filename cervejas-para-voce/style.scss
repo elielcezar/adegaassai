@@ -49,14 +49,13 @@ header .container nav.left .select li a:hover {
 }
 
 
-#main .sidebar ul.menu,
-#main-menu-mobile ul.menu{
-    background: $amarelo;
+ul.menu{
+    
     .menu-item-73 a{background-image: url(../tema-principal/img/ico-selecao.png);}    
-    .menu-item-75 a{background-image: url(../tema-principal/img/ico-cervejas.png);}    
+    .menu-item-266 a{background-image: url(../tema-principal/img/ico-cervejas.png);}    
     .menu-item-165 a{background-image: url(../tema-principal/img/ico-harmonizacao.png?v2);}    
-    .menu-item-155 a{background-image: url(../tema-principal/img/ico-receitas.png);}    
-    .menu-item-77 a{background-image: url(../tema-principal/img/ico-dicas.png);}              
+    .menu-item-265 a{background-image: url(../tema-principal/img/ico-receitas.png);}    
+    .menu-item-264 a{background-image: url(../tema-principal/img/ico-dicas.png);}              
     .menu-item-74{
       background-color: #831e00;
       a{background-image: url(../tema-principal/img/ico-vinhos.png?v2);}  
@@ -105,7 +104,8 @@ header .container nav.left .select li a:hover {
 
 .category,
 .page-template-page-blog,
-.page-template-page-harmonizacao{
+.page-template-page-harmonizacao,
+.page-template-page-tipos-de-cervejas{
     #main{
         .content{            
             .item{
@@ -121,6 +121,19 @@ header .container nav.left .select li a:hover {
     padding: 0;    
 
     .content{
+      padding-top: 0;
+      h2{
+        background: #ffdfb7;
+        border: none;
+        margin-bottom: 30px;
+        padding: 41px 45px;
+        text-align: left;
+        font-size: 30px;
+        line-height: 38px;
+        font-weight: 800;
+        color: #831e00;
+        margin-top: 0;
+      }
       @media(orientation:portrait){          
         padding: 0;
       }
@@ -344,28 +357,28 @@ header .container nav.left .select li a:hover {
   .imagem-destaque{
     .tacas{ 
       li{        
-          &.item-314{
+          &.item-186{
             background-image: url(img/cerveja-clara.png);
             width: 4vw;
             @media(orientation:portrait){
               width: 10vw;
             }
           }
-          &.item-308{
+          &.item-201{
             background-image: url(img/cerveja-trigo.png);
             width: 5vw;
             @media(orientation:portrait){
               width: 12vw;
             }
           }
-          &.item-311{
+          &.item-191{
             background-image: url(img/cerveja-escura.png);
             width: 6vw;
             @media(orientation:portrait){
               width: 14vw;
             }
           }
-          &.item-305{
+          &.item-207{
             background-image: url(img/cerveja-especial.png);
             width: 4vw;
             @media(orientation:portrait){

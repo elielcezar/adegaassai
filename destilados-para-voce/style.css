@@ -41,40 +41,28 @@ header .container nav.left .select li a:hover {
   background: transparent;
 }
 
-#main .sidebar ul.menu,
-#main-menu-mobile ul.menu {
-  background: #ff5e00;
-}
-#main .sidebar ul.menu .menu-item-16 a,
-#main-menu-mobile ul.menu .menu-item-16 a {
+ul.menu .menu-item-16 a {
   background-image: url(../tema-principal/img/ico-selecao.png);
 }
-#main .sidebar ul.menu .menu-item-52 a,
-#main-menu-mobile ul.menu .menu-item-52 a {
+ul.menu .menu-item-214 a {
   background-image: url(../tema-principal/img/ico-tipos.png);
 }
-#main .sidebar ul.menu .menu-item-53 a,
-#main-menu-mobile ul.menu .menu-item-53 a {
+ul.menu .menu-item-213 a {
   background-image: url(../tema-principal/img/ico-drinks.png);
 }
-#main .sidebar ul.menu .menu-item-54 a,
-#main-menu-mobile ul.menu .menu-item-54 a {
+ul.menu .menu-item-212 a {
   background-image: url(../tema-principal/img/ico-dicas.png);
 }
-#main .sidebar ul.menu .menu-item-25,
-#main-menu-mobile ul.menu .menu-item-25 {
+ul.menu .menu-item-25 {
   background-color: #831e00;
 }
-#main .sidebar ul.menu .menu-item-25 a,
-#main-menu-mobile ul.menu .menu-item-25 a {
+ul.menu .menu-item-25 a {
   background-image: url(../tema-principal/img/ico-vinhos.png?v2);
 }
-#main .sidebar ul.menu .menu-item-97,
-#main-menu-mobile ul.menu .menu-item-97 {
+ul.menu .menu-item-97 {
   background-color: #f68c21;
 }
-#main .sidebar ul.menu .menu-item-97 a,
-#main-menu-mobile ul.menu .menu-item-97 a {
+ul.menu .menu-item-97 a {
   background-image: url(../tema-principal/img/ico-cervejas.png);
 }
 
@@ -113,10 +101,25 @@ header .container nav.left .select li a:hover {
 .page-template-page-monte-adega #main {
   padding: 0;
 }
+.page-template-page-monte-adega #main .content {
+  padding-top: 0;
+}
 @media (orientation: portrait) {
   .page-template-page-monte-adega #main .content {
     padding: 0;
   }
+}
+.page-template-page-monte-adega #main .content h2 {
+  background: #ffdfb7;
+  border: none;
+  margin-bottom: 30px;
+  padding: 41px 45px;
+  text-align: left;
+  font-size: 30px;
+  line-height: 38px;
+  font-weight: 800;
+  color: #831e00;
+  margin-top: 0;
 }
 .page-template-page-monte-adega #main .lista h3 {
   text-transform: uppercase;

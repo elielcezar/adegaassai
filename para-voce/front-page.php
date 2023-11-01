@@ -58,7 +58,7 @@ Template Name: Homepage Custom
 
   
   <div class="sidebar">  
-      <?php get_template_part( 'cadastrese' ); ?>     
+      <?php get_template_part( 'sidebar' ); ?>     
     </div>
 
     <div class="content">    

@@ -44,9 +44,11 @@ Template Name: Dica do Sommelier
   <div class="container">
         
   <div class="sidebar">
-      <?php get_template_part( 'cadastrese' ); ?>     
+      <?php get_template_part( 'sidebar' ); ?>     
     </div>
-    <div class="content">         
+    <div class="content">    
+      
+    <?php the_content(); ?>
 
         <div class="lista" id="tintos">            
             <div class="row">

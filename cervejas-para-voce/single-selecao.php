@@ -18,7 +18,7 @@
   <div class="container">
 
   <div class="sidebar">
-      <?php get_template_part( 'cadastrese' ); ?>     
+      <?php get_template_part( 'sidebar' ); ?>     
     </div>
 
 

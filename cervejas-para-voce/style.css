@@ -41,44 +41,31 @@ header .container nav.left .select li a:hover {
   background: transparent;
 }
 
-#main .sidebar ul.menu,
-#main-menu-mobile ul.menu {
-  background: #f68c21;
-}
-#main .sidebar ul.menu .menu-item-73 a,
-#main-menu-mobile ul.menu .menu-item-73 a {
+ul.menu .menu-item-73 a {
   background-image: url(../tema-principal/img/ico-selecao.png);
 }
-#main .sidebar ul.menu .menu-item-75 a,
-#main-menu-mobile ul.menu .menu-item-75 a {
+ul.menu .menu-item-266 a {
   background-image: url(../tema-principal/img/ico-cervejas.png);
 }
-#main .sidebar ul.menu .menu-item-165 a,
-#main-menu-mobile ul.menu .menu-item-165 a {
+ul.menu .menu-item-165 a {
   background-image: url(../tema-principal/img/ico-harmonizacao.png?v2);
 }
-#main .sidebar ul.menu .menu-item-155 a,
-#main-menu-mobile ul.menu .menu-item-155 a {
+ul.menu .menu-item-265 a {
   background-image: url(../tema-principal/img/ico-receitas.png);
 }
-#main .sidebar ul.menu .menu-item-77 a,
-#main-menu-mobile ul.menu .menu-item-77 a {
+ul.menu .menu-item-264 a {
   background-image: url(../tema-principal/img/ico-dicas.png);
 }
-#main .sidebar ul.menu .menu-item-74,
-#main-menu-mobile ul.menu .menu-item-74 {
+ul.menu .menu-item-74 {
   background-color: #831e00;
 }
-#main .sidebar ul.menu .menu-item-74 a,
-#main-menu-mobile ul.menu .menu-item-74 a {
+ul.menu .menu-item-74 a {
   background-image: url(../tema-principal/img/ico-vinhos.png?v2);
 }
-#main .sidebar ul.menu .menu-item-89,
-#main-menu-mobile ul.menu .menu-item-89 {
+ul.menu .menu-item-89 {
   background-color: #ff5e00;
 }
-#main .sidebar ul.menu .menu-item-89 a,
-#main-menu-mobile ul.menu .menu-item-89 a {
+ul.menu .menu-item-89 a {
   background-image: url(../tema-principal/img/ico-destilados.png?v2);
 }
 
@@ -109,13 +96,29 @@ header .container nav.left .select li a:hover {
 /*--- CATEGORIA -------------------------------------------------------------------------*/
 .category #main .content .item,
 .page-template-page-blog #main .content .item,
-.page-template-page-harmonizacao #main .content .item {
+.page-template-page-harmonizacao #main .content .item,
+.page-template-page-tipos-de-cervejas #main .content .item {
   background: #fefbf2;
 }
 
 /*--- SELECAO / SOMMELIER ---------------------------------------------------------------------------------------------*/
 .page-template-page-monte-adega #main {
   padding: 0;
+}
+.page-template-page-monte-adega #main .content {
+  padding-top: 0;
+}
+.page-template-page-monte-adega #main .content h2 {
+  background: #ffdfb7;
+  border: none;
+  margin-bottom: 30px;
+  padding: 41px 45px;
+  text-align: left;
+  font-size: 30px;
+  line-height: 38px;
+  font-weight: 800;
+  color: #831e00;
+  margin-top: 0;
 }
 @media (orientation: portrait) {
   .page-template-page-monte-adega #main .content {
@@ -318,39 +321,39 @@ header .container nav.left .select li a:hover {
 }
 
 /*--- HARMONIZACAO INDIVIDUAL ----------------------------------------------------------------------------------*/
-.single-harmonizacao .imagem-destaque .tacas li.item-314 {
+.single-harmonizacao .imagem-destaque .tacas li.item-186 {
   background-image: url(img/cerveja-clara.png);
   width: 4vw;
 }
 @media (orientation: portrait) {
-  .single-harmonizacao .imagem-destaque .tacas li.item-314 {
+  .single-harmonizacao .imagem-destaque .tacas li.item-186 {
     width: 10vw;
   }
 }
-.single-harmonizacao .imagem-destaque .tacas li.item-308 {
+.single-harmonizacao .imagem-destaque .tacas li.item-201 {
   background-image: url(img/cerveja-trigo.png);
   width: 5vw;
 }
 @media (orientation: portrait) {
-  .single-harmonizacao .imagem-destaque .tacas li.item-308 {
+  .single-harmonizacao .imagem-destaque .tacas li.item-201 {
     width: 12vw;
   }
 }
-.single-harmonizacao .imagem-destaque .tacas li.item-311 {
+.single-harmonizacao .imagem-destaque .tacas li.item-191 {
   background-image: url(img/cerveja-escura.png);
   width: 6vw;
 }
 @media (orientation: portrait) {
-  .single-harmonizacao .imagem-destaque .tacas li.item-311 {
+  .single-harmonizacao .imagem-destaque .tacas li.item-191 {
     width: 14vw;
   }
 }
-.single-harmonizacao .imagem-destaque .tacas li.item-305 {
+.single-harmonizacao .imagem-destaque .tacas li.item-207 {
   background-image: url(img/cerveja-especial.png);
   width: 4vw;
 }
 @media (orientation: portrait) {
-  .single-harmonizacao .imagem-destaque .tacas li.item-305 {
+  .single-harmonizacao .imagem-destaque .tacas li.item-207 {
     width: 10vw;
   }
 }/*# sourceMappingURL=style.css.map */

@@ -49,13 +49,12 @@ header .container nav.left .select li a:hover {
 }
 
 
-#main .sidebar ul.menu,
-#main-menu-mobile ul.menu{
-    background: $laranja;
+ul.menu{
+    //background: $laranja;
     .menu-item-16 a{background-image: url(../tema-principal/img/ico-selecao.png);}    
-    .menu-item-52 a{background-image: url(../tema-principal/img/ico-tipos.png);}    
-    .menu-item-53 a{background-image: url(../tema-principal/img/ico-drinks.png);}    
-    .menu-item-54 a{background-image: url(../tema-principal/img/ico-dicas.png);}              
+    .menu-item-214 a{background-image: url(../tema-principal/img/ico-tipos.png);}    
+    .menu-item-213 a{background-image: url(../tema-principal/img/ico-drinks.png);}    
+    .menu-item-212 a{background-image: url(../tema-principal/img/ico-dicas.png);}              
     .menu-item-25{
       background-color: #831e00;
       a{background-image: url(../tema-principal/img/ico-vinhos.png?v2);}  
@@ -67,6 +66,8 @@ header .container nav.left .select li a:hover {
       }
     }
 } 
+
+
 
 #main-menu-mobile{
   background: $laranja;
@@ -125,6 +126,20 @@ header .container nav.left .select li a:hover {
     .content{
       @media(orientation:portrait){          
         padding: 0;
+      }
+      padding-top: 0;
+
+      h2{
+        background: #ffdfb7;
+        border: none;
+        margin-bottom: 30px;
+        padding: 41px 45px;
+        text-align: left;
+        font-size: 30px;
+        line-height: 38px;
+        font-weight: 800;
+        color: #831e00;
+        margin-top: 0;
       }
     }
 

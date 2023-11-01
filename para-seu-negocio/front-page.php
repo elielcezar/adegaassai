@@ -29,7 +29,7 @@ Template Name: Homepage Custom
   endif; ?>
 </section>
 
-<section class="banners top mobile">
+  <section class="banners top mobile">
     <div class="item">
     <a href=""><img src="https://megamidiagroup.com.br/adegaassai/para-seu-negocio/wp-content/uploads/sites/3/2023/07/v3.jpg" alt=""></a>
   </div>
@@ -58,7 +58,7 @@ Template Name: Homepage Custom
   <div class="container">
 
   <div class="sidebar">  
-      <?php get_template_part( 'cadastrese' ); ?>     
+      <?php get_template_part( 'sidebar' ); ?>     
     </div>
 
     

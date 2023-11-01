@@ -57,8 +57,7 @@
         <h1 class="title"><a href="<?php echo site_url(); ?>"><?php echo get_bloginfo( 'name' ); ?></a></h1>
 
         <nav class="right">
-            <ul>
-              <!--li><a href="<?php echo site_url(); ?>/indicacao-do-sommelier/">Indicação do <strong>Sommelier</strong></a></li-->
+            <ul>              
               <li><a href="<?php echo site_url(); ?>/vitrine-do-fornecedor/">Vitrine do <strong>Fornecedor</strong></a></li>
               <li><a href="<?php echo site_url(); ?>/cadastre-se" class="btn">Cadastre-se</a></li>
             </ul>            

@@ -2,7 +2,7 @@
 
 <section class="banners top desktop carrossel">
     <div class="item">
-    <a href=""><img src="<?php echo site_url(); ?>/wp-content/uploads/sites/5/2023/09/selecao-assai.png" alt=""></a>
+    <a href=""><img src="<?php echo site_url(); ?>/wp-content/uploads/sites/4/2023/09/monte-sua-adega.png" alt=""></a>
   </div>
   </section>
 
@@ -19,7 +19,7 @@
 
   <div class="container">
   <div class="sidebar">
-      <?php get_template_part( 'cadastrese' ); ?>     
+      <?php get_template_part( 'sidebar' ); ?>     
     </div>
 
     

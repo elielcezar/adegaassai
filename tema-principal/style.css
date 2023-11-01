@@ -332,11 +332,6 @@ img {
 .container #sidebar {
   position: relative;
 }
-@media (orientation: landscape) {
-  .container #sidebar {
-    width: 25%;
-  }
-}
 
 .slick-slider {
   margin-bottom: 0 !important;
@@ -828,6 +823,9 @@ body.logged-in header {
   #main .sidebar {
     width: 100%;
     margin-left: 0;
+    margin-top: 20px;
+    padding-top: 50px;
+    border-top: 1px solid #ccc;
   }
 }
 #main .sidebar ul.menu {
@@ -867,7 +865,8 @@ body.logged-in header {
   }
 }
 #main .sidebar .podcast {
-  margin-bottom: 40px;
+  margin-bottom: 20px;
+  display: flex;
 }
 #main .sidebar .podcast img {
   cursor: pointer;
@@ -1002,21 +1001,73 @@ li.current-menu-parent,
 @media (orientation: portrait) {
   .category .container,
   .page-template-page-blog .container,
-  .page-template-page-harmonizacao .container {
+  .page-template-page-harmonizacao .container,
+  .page-template-page-tipos-de-vinhos .container,
+  .page-template-page-receitas .container,
+  .page-template-page-blog-da-adega .container,
+  .page-template-page-tipos-de-cervejas .container,
+  .page-template-page-tipos-de-destilados .container,
+  .page-template-page-drinks .container {
     padding: 5%;
   }
 }
+.category #main .content,
+.page-template-page-blog #main .content,
+.page-template-page-harmonizacao #main .content,
+.page-template-page-tipos-de-vinhos #main .content,
+.page-template-page-receitas #main .content,
+.page-template-page-blog-da-adega #main .content,
+.page-template-page-tipos-de-cervejas #main .content,
+.page-template-page-tipos-de-destilados #main .content,
+.page-template-page-drinks #main .content {
+  padding-top: 0;
+}
 .category #main .content h2,
 .page-template-page-blog #main .content h2,
-.page-template-page-harmonizacao #main .content h2 {
-  padding: 25px;
-  border: 2px solid #831e00;
-  font-size: 20px;
-  margin: 5px 0 30px 0;
+.page-template-page-harmonizacao #main .content h2,
+.page-template-page-tipos-de-vinhos #main .content h2,
+.page-template-page-receitas #main .content h2,
+.page-template-page-blog-da-adega #main .content h2,
+.page-template-page-tipos-de-cervejas #main .content h2,
+.page-template-page-tipos-de-destilados #main .content h2,
+.page-template-page-drinks #main .content h2 {
+  background: #ffdfb7;
+  border: none;
+  margin-bottom: 30px;
+  padding: 20px 45px;
+  text-align: left;
+  font-size: 30px;
+  line-height: 38px;
+  font-weight: 800;
+  color: #831e00;
+  margin-top: 0;
+  min-height: 139px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+@media (min-width: 1600px) {
+  .category #main .content h2,
+  .page-template-page-blog #main .content h2,
+  .page-template-page-harmonizacao #main .content h2,
+  .page-template-page-tipos-de-vinhos #main .content h2,
+  .page-template-page-receitas #main .content h2,
+  .page-template-page-blog-da-adega #main .content h2,
+  .page-template-page-tipos-de-cervejas #main .content h2,
+  .page-template-page-tipos-de-destilados #main .content h2,
+  .page-template-page-drinks #main .content h2 {
+    min-height: 161px;
+  }
 }
 .category #main .content .item,
 .page-template-page-blog #main .content .item,
-.page-template-page-harmonizacao #main .content .item {
+.page-template-page-harmonizacao #main .content .item,
+.page-template-page-tipos-de-vinhos #main .content .item,
+.page-template-page-receitas #main .content .item,
+.page-template-page-blog-da-adega #main .content .item,
+.page-template-page-tipos-de-cervejas #main .content .item,
+.page-template-page-tipos-de-destilados #main .content .item,
+.page-template-page-drinks #main .content .item {
   display: flex;
   justify-content: space-between;
   margin-bottom: 35px;
@@ -1026,7 +1077,13 @@ li.current-menu-parent,
 @media (orientation: portrait) {
   .category #main .content .item,
   .page-template-page-blog #main .content .item,
-  .page-template-page-harmonizacao #main .content .item {
+  .page-template-page-harmonizacao #main .content .item,
+  .page-template-page-tipos-de-vinhos #main .content .item,
+  .page-template-page-receitas #main .content .item,
+  .page-template-page-blog-da-adega #main .content .item,
+  .page-template-page-tipos-de-cervejas #main .content .item,
+  .page-template-page-tipos-de-destilados #main .content .item,
+  .page-template-page-drinks #main .content .item {
     flex-direction: column;
   }
 }
@@ -1035,7 +1092,19 @@ li.current-menu-parent,
 .page-template-page-blog #main .content .item .col-1,
 .page-template-page-blog #main .content .item .col-2,
 .page-template-page-harmonizacao #main .content .item .col-1,
-.page-template-page-harmonizacao #main .content .item .col-2 {
+.page-template-page-harmonizacao #main .content .item .col-2,
+.page-template-page-tipos-de-vinhos #main .content .item .col-1,
+.page-template-page-tipos-de-vinhos #main .content .item .col-2,
+.page-template-page-receitas #main .content .item .col-1,
+.page-template-page-receitas #main .content .item .col-2,
+.page-template-page-blog-da-adega #main .content .item .col-1,
+.page-template-page-blog-da-adega #main .content .item .col-2,
+.page-template-page-tipos-de-cervejas #main .content .item .col-1,
+.page-template-page-tipos-de-cervejas #main .content .item .col-2,
+.page-template-page-tipos-de-destilados #main .content .item .col-1,
+.page-template-page-tipos-de-destilados #main .content .item .col-2,
+.page-template-page-drinks #main .content .item .col-1,
+.page-template-page-drinks #main .content .item .col-2 {
   width: 50%;
 }
 @media (orientation: portrait) {
@@ -1044,20 +1113,44 @@ li.current-menu-parent,
   .page-template-page-blog #main .content .item .col-1,
   .page-template-page-blog #main .content .item .col-2,
   .page-template-page-harmonizacao #main .content .item .col-1,
-  .page-template-page-harmonizacao #main .content .item .col-2 {
+  .page-template-page-harmonizacao #main .content .item .col-2,
+  .page-template-page-tipos-de-vinhos #main .content .item .col-1,
+  .page-template-page-tipos-de-vinhos #main .content .item .col-2,
+  .page-template-page-receitas #main .content .item .col-1,
+  .page-template-page-receitas #main .content .item .col-2,
+  .page-template-page-blog-da-adega #main .content .item .col-1,
+  .page-template-page-blog-da-adega #main .content .item .col-2,
+  .page-template-page-tipos-de-cervejas #main .content .item .col-1,
+  .page-template-page-tipos-de-cervejas #main .content .item .col-2,
+  .page-template-page-tipos-de-destilados #main .content .item .col-1,
+  .page-template-page-tipos-de-destilados #main .content .item .col-2,
+  .page-template-page-drinks #main .content .item .col-1,
+  .page-template-page-drinks #main .content .item .col-2 {
     width: 100%;
   }
 }
 @media (orientation: portrait) {
   .category #main .content .item .col-1,
   .page-template-page-blog #main .content .item .col-1,
-  .page-template-page-harmonizacao #main .content .item .col-1 {
+  .page-template-page-harmonizacao #main .content .item .col-1,
+  .page-template-page-tipos-de-vinhos #main .content .item .col-1,
+  .page-template-page-receitas #main .content .item .col-1,
+  .page-template-page-blog-da-adega #main .content .item .col-1,
+  .page-template-page-tipos-de-cervejas #main .content .item .col-1,
+  .page-template-page-tipos-de-destilados #main .content .item .col-1,
+  .page-template-page-drinks #main .content .item .col-1 {
     margin-bottom: 20px;
   }
 }
 .category #main .content .item .col-2,
 .page-template-page-blog #main .content .item .col-2,
-.page-template-page-harmonizacao #main .content .item .col-2 {
+.page-template-page-harmonizacao #main .content .item .col-2,
+.page-template-page-tipos-de-vinhos #main .content .item .col-2,
+.page-template-page-receitas #main .content .item .col-2,
+.page-template-page-blog-da-adega #main .content .item .col-2,
+.page-template-page-tipos-de-cervejas #main .content .item .col-2,
+.page-template-page-tipos-de-destilados #main .content .item .col-2,
+.page-template-page-drinks #main .content .item .col-2 {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -1066,30 +1159,60 @@ li.current-menu-parent,
 @media (orientation: landscape) {
   .category #main .content .item .col-2,
   .page-template-page-blog #main .content .item .col-2,
-  .page-template-page-harmonizacao #main .content .item .col-2 {
+  .page-template-page-harmonizacao #main .content .item .col-2,
+  .page-template-page-tipos-de-vinhos #main .content .item .col-2,
+  .page-template-page-receitas #main .content .item .col-2,
+  .page-template-page-blog-da-adega #main .content .item .col-2,
+  .page-template-page-tipos-de-cervejas #main .content .item .col-2,
+  .page-template-page-tipos-de-destilados #main .content .item .col-2,
+  .page-template-page-drinks #main .content .item .col-2 {
     padding-left: 5%;
   }
 }
 .category #main .content .item .col-2 h3,
 .page-template-page-blog #main .content .item .col-2 h3,
-.page-template-page-harmonizacao #main .content .item .col-2 h3 {
+.page-template-page-harmonizacao #main .content .item .col-2 h3,
+.page-template-page-tipos-de-vinhos #main .content .item .col-2 h3,
+.page-template-page-receitas #main .content .item .col-2 h3,
+.page-template-page-blog-da-adega #main .content .item .col-2 h3,
+.page-template-page-tipos-de-cervejas #main .content .item .col-2 h3,
+.page-template-page-tipos-de-destilados #main .content .item .col-2 h3,
+.page-template-page-drinks #main .content .item .col-2 h3 {
   margin: 0;
 }
 .category #main .content .item .col-2 h3 a,
 .page-template-page-blog #main .content .item .col-2 h3 a,
-.page-template-page-harmonizacao #main .content .item .col-2 h3 a {
+.page-template-page-harmonizacao #main .content .item .col-2 h3 a,
+.page-template-page-tipos-de-vinhos #main .content .item .col-2 h3 a,
+.page-template-page-receitas #main .content .item .col-2 h3 a,
+.page-template-page-blog-da-adega #main .content .item .col-2 h3 a,
+.page-template-page-tipos-de-cervejas #main .content .item .col-2 h3 a,
+.page-template-page-tipos-de-destilados #main .content .item .col-2 h3 a,
+.page-template-page-drinks #main .content .item .col-2 h3 a {
   font-size: 24px;
   color: #831e00;
   font-weight: 700;
 }
 .category #main .fornecedores,
 .page-template-page-blog #main .fornecedores,
-.page-template-page-harmonizacao #main .fornecedores {
+.page-template-page-harmonizacao #main .fornecedores,
+.page-template-page-tipos-de-vinhos #main .fornecedores,
+.page-template-page-receitas #main .fornecedores,
+.page-template-page-blog-da-adega #main .fornecedores,
+.page-template-page-tipos-de-cervejas #main .fornecedores,
+.page-template-page-tipos-de-destilados #main .fornecedores,
+.page-template-page-drinks #main .fornecedores {
   margin-top: 50px;
 }
 .category #main .fornecedores h2,
 .page-template-page-blog #main .fornecedores h2,
-.page-template-page-harmonizacao #main .fornecedores h2 {
+.page-template-page-harmonizacao #main .fornecedores h2,
+.page-template-page-tipos-de-vinhos #main .fornecedores h2,
+.page-template-page-receitas #main .fornecedores h2,
+.page-template-page-blog-da-adega #main .fornecedores h2,
+.page-template-page-tipos-de-cervejas #main .fornecedores h2,
+.page-template-page-tipos-de-destilados #main .fornecedores h2,
+.page-template-page-drinks #main .fornecedores h2 {
   margin: 0;
 }
 
@@ -1101,13 +1224,22 @@ li.current-menu-parent,
   background: #ffdfb7;
   border: none;
   margin-bottom: 30px;
-  padding: 41px 45px;
+  padding: 20px 45px;
   text-align: left;
   font-size: 30px;
   line-height: 38px;
   font-weight: 800;
   color: #831e00;
   margin-top: 0;
+  min-height: 139px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+@media (min-width: 1600px) {
+  .page-template-page-harmonizacao #main .content h2 {
+    min-height: 161px;
+  }
 }
 @media (orientation: portrait) {
   .page-template-page-harmonizacao #main .content .item {
@@ -1248,6 +1380,33 @@ li.current-menu-parent,
 .page-template-page-sommelier #main,
 .page-template-page-selecao #main {
   padding: 0;
+}
+.page-template-page-sommelier #main .content,
+.page-template-page-selecao #main .content {
+  padding-top: 0;
+}
+.page-template-page-sommelier #main .content h2,
+.page-template-page-selecao #main .content h2 {
+  background: #ffdfb7;
+  border: none;
+  margin-bottom: 30px;
+  padding: 20px 45px;
+  text-align: left;
+  font-size: 30px;
+  line-height: 38px;
+  font-weight: 800;
+  color: #831e00;
+  margin-top: 0;
+  min-height: 139px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+@media (min-width: 1600px) {
+  .page-template-page-sommelier #main .content h2,
+  .page-template-page-selecao #main .content h2 {
+    min-height: 161px;
+  }
 }
 @media (orientation: portrait) {
   .page-template-page-sommelier #main .content,
@@ -1692,6 +1851,16 @@ li.current-menu-parent,
   float: left;
   width: 90%;
 }
+@media (orientation: portrait) {
+  .page-id-14 #main .content .wpcf7-form .row .form-item .wpcf7-checkbox label,
+  .page-id-15 #main .content .wpcf7-form .row .form-item .wpcf7-checkbox label,
+  .page-id-72 #main .content .wpcf7-form .row .form-item .wpcf7-checkbox label,
+  .page-id-122 #main .content .wpcf7-form .row .form-item .wpcf7-checkbox label,
+  .page-id-91 #main .content .wpcf7-form .row .form-item .wpcf7-checkbox label,
+  .page-id-133 #main .content .wpcf7-form .row .form-item .wpcf7-checkbox label {
+    display: flex;
+  }
+}
 .page-id-14 #main .content .wpcf7-form .row .form-item .wpcf7-list-item,
 .page-id-15 #main .content .wpcf7-form .row .form-item .wpcf7-list-item,
 .page-id-72 #main .content .wpcf7-form .row .form-item .wpcf7-list-item,
@@ -1699,6 +1868,27 @@ li.current-menu-parent,
 .page-id-91 #main .content .wpcf7-form .row .form-item .wpcf7-list-item,
 .page-id-133 #main .content .wpcf7-form .row .form-item .wpcf7-list-item {
   margin: 0;
+}
+@media (orientation: portrait) {
+  .page-id-14 #main .content .wpcf7-form .row .form-item .wpcf7-radio label,
+  .page-id-15 #main .content .wpcf7-form .row .form-item .wpcf7-radio label,
+  .page-id-72 #main .content .wpcf7-form .row .form-item .wpcf7-radio label,
+  .page-id-122 #main .content .wpcf7-form .row .form-item .wpcf7-radio label,
+  .page-id-91 #main .content .wpcf7-form .row .form-item .wpcf7-radio label,
+  .page-id-133 #main .content .wpcf7-form .row .form-item .wpcf7-radio label {
+    display: flex;
+  }
+}
+@media (orientation: portrait) {
+  .page-id-14 #main .content .wpcf7-form .row .form-item .wpcf7-radio label input[type=radio],
+  .page-id-15 #main .content .wpcf7-form .row .form-item .wpcf7-radio label input[type=radio],
+  .page-id-72 #main .content .wpcf7-form .row .form-item .wpcf7-radio label input[type=radio],
+  .page-id-122 #main .content .wpcf7-form .row .form-item .wpcf7-radio label input[type=radio],
+  .page-id-91 #main .content .wpcf7-form .row .form-item .wpcf7-radio label input[type=radio],
+  .page-id-133 #main .content .wpcf7-form .row .form-item .wpcf7-radio label input[type=radio] {
+    width: 22px;
+    margin-top: 5px;
+  }
 }
 .page-id-14 #main .content .wpcf7-form .row .form-item.checkbox,
 .page-id-15 #main .content .wpcf7-form .row .form-item.checkbox,
@@ -1878,14 +2068,12 @@ footer .container .row .col-1 {
   footer .container .row .col-1 {
     width: 100%;
     text-align: center;
+    justify-content: center;
   }
 }
 footer .container .row .col-1 img:nth-child(1) {
   max-width: 100px;
-  margin-right: 30px;
-}
-footer .container .row .col-1 img:nth-child(2) {
-  max-width: 150px;
+  margin: 0;
 }
 footer .container .row .col-2 {
   width: 25%;

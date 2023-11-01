@@ -34,7 +34,7 @@ header .container nav.left .select li a:hover {
     border-bottom: 10px solid $amarelo;
 }
 
-#main .sidebar #menu-menu-principal-1 {
+#main .sidebar #menu-menu-principal-2 {
     background: $amarelo;    
 }
 
@@ -51,14 +51,12 @@ header .container nav.left .select li a:hover {
 
 
 
-#main .sidebar ul.menu,
-#main-menu-mobile ul.menu{
-    background: $amarelo;
+ul.menu{    
     .menu-item-123 a{background-image: url(../tema-principal/img/ico-selecao.png);}    
-    .menu-item-70 a{background-image: url(../tema-principal/img/ico-cervejas.png);}    
+    .menu-item-335 a{background-image: url(../tema-principal/img/ico-cervejas.png);}    
     .menu-item-234 a{background-image: url(../tema-principal/img/ico-harmonizacao.png?v2);}    
-    .menu-item-221 a{background-image: url(../tema-principal/img/ico-receitas.png);}    
-    .menu-item-72 a{background-image: url(../tema-principal/img/ico-dicas.png);}              
+    .menu-item-334 a{background-image: url(../tema-principal/img/ico-receitas.png);}    
+    .menu-item-333 a{background-image: url(../tema-principal/img/ico-dicas.png);}              
     .menu-item-69{
       background-color: #831e00;
       a{background-image: url(../tema-principal/img/ico-vinhos.png?v2);}  

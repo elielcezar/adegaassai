@@ -29,7 +29,7 @@ header .container nav.left .select li a:hover {
   border-bottom: 10px solid #f68c21;
 }
 
-#main .sidebar #menu-menu-principal-1 {
+#main .sidebar #menu-menu-principal-2 {
   background: #f68c21;
 }
 
@@ -41,44 +41,31 @@ header .container nav.left .select li a:hover {
   background: transparent;
 }
 
-#main .sidebar ul.menu,
-#main-menu-mobile ul.menu {
-  background: #f68c21;
-}
-#main .sidebar ul.menu .menu-item-123 a,
-#main-menu-mobile ul.menu .menu-item-123 a {
+ul.menu .menu-item-123 a {
   background-image: url(../tema-principal/img/ico-selecao.png);
 }
-#main .sidebar ul.menu .menu-item-70 a,
-#main-menu-mobile ul.menu .menu-item-70 a {
+ul.menu .menu-item-335 a {
   background-image: url(../tema-principal/img/ico-cervejas.png);
 }
-#main .sidebar ul.menu .menu-item-234 a,
-#main-menu-mobile ul.menu .menu-item-234 a {
+ul.menu .menu-item-234 a {
   background-image: url(../tema-principal/img/ico-harmonizacao.png?v2);
 }
-#main .sidebar ul.menu .menu-item-221 a,
-#main-menu-mobile ul.menu .menu-item-221 a {
+ul.menu .menu-item-334 a {
   background-image: url(../tema-principal/img/ico-receitas.png);
 }
-#main .sidebar ul.menu .menu-item-72 a,
-#main-menu-mobile ul.menu .menu-item-72 a {
+ul.menu .menu-item-333 a {
   background-image: url(../tema-principal/img/ico-dicas.png);
 }
-#main .sidebar ul.menu .menu-item-69,
-#main-menu-mobile ul.menu .menu-item-69 {
+ul.menu .menu-item-69 {
   background-color: #831e00;
 }
-#main .sidebar ul.menu .menu-item-69 a,
-#main-menu-mobile ul.menu .menu-item-69 a {
+ul.menu .menu-item-69 a {
   background-image: url(../tema-principal/img/ico-vinhos.png?v2);
 }
-#main .sidebar ul.menu .menu-item-131,
-#main-menu-mobile ul.menu .menu-item-131 {
+ul.menu .menu-item-131 {
   background-color: #ff5e00;
 }
-#main .sidebar ul.menu .menu-item-131 a,
-#main-menu-mobile ul.menu .menu-item-131 a {
+ul.menu .menu-item-131 a {
   background-image: url(../tema-principal/img/ico-destilados.png?v2);
 }
 

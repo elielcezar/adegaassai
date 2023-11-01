@@ -58,7 +58,7 @@ Template Name: Homepage Custom
   <div class="container">
 
   <div class="sidebar">  
-      <?php get_template_part( 'cadastrese' ); ?>    
+      <?php get_template_part( 'sidebar' ); ?>
     </div>
 
     
@@ -126,22 +126,16 @@ Template Name: Homepage Custom
           </a>      
       </div>
 
-      <!--a id="example1" href="http://farm6.staticflickr.com/5614/15602332537_bae1aaccd8_b.jpg">
-      <img alt="example1" src="http://farm6.staticflickr.com/5614/15602332537_bae1aaccd8_m.jpg">
-    </a-->
-
-      
     <div id="video">          
           <a data-fancybox data-width="640" data-height="360" href="https://megamidiagroup.com.br/adegaassai/wp-content/themes/tema-principal/img/vinhos-salton.mp4">
           <img src="<?php echo get_stylesheet_directory_uri() ?>/img/banner-home-1.jpg?v2" alt="">   
       </a>
       </div>
 
-
       <?php
         $loop = new WP_Query(array(
           'post_type' => 'post',          
-          'category_name' => 'drinks',
+          'category_name' => 'receitas',
           'posts_per_page' => 1,
           'order' => 'DESC'
         ));

@@ -33,8 +33,8 @@
                 </div>
                 <div class="col-3">
                     <ul class="select">
-                        <li><a href="https://megamidiagroup.com.br/adegaassai/para-voce" class="active">Para você</a></li>
-                        <li><a href="https://megamidiagroup.com.br/adegaassai/para-seu-negocio/">Para seu negócio</a></li>
+                        <li><a href="https://megamidiagroup.com.br/adegaassai/vinhos-para-voce" class="active">Para você</a></li>
+                        <li><a href="https://megamidiagroup.com.br/adegaassai/vinhos-para-seu-negocio/">Para seu negócio</a></li>
                     </ul>
                 </div>
                 <div class="col-4">
@@ -49,11 +49,6 @@
             </div>
     </div>
 </footer>
-<div class="footer-1">
-    <div class="conteiner">
-        <p>BEBA COM MODERAÇÃO. A VENDA E O CONSUMO DE BEBIDA ALCOÓLICA SÃO PROIBIDOS PARA MENORES.</p>
-    </div>
-</div>
 <div class="footer-1">
     <div class="conteiner">
         <p>BEBA COM MODERAÇÃO. A VENDA E O CONSUMO DE BEBIDA ALCOÓLICA SÃO PROIBIDOS PARA MENORES.</p>

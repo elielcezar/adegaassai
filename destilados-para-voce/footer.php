@@ -34,8 +34,8 @@
                 </div>
                 <div class="col-3">
                     <ul class="select">
-                        <li><a href="https://megamidiagroup.com.br/adegaassai/destilados-para-voce/">Para você</a></li>
-                        <li><a href="https://megamidiagroup.com.br/adegaassai/destilados-para-seu-negocio/" class="active">Para seu negócio</a></li>
+                        <li><a href="https://megamidiagroup.com.br/adegaassai/destilados-para-voce/"class="active">Para você</a></li>
+                        <li><a href="https://megamidiagroup.com.br/adegaassai/destilados-para-seu-negocio/">Para seu negócio</a></li>
                     </ul>
                 </div>
                 <div class="col-4">

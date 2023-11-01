@@ -332,10 +332,7 @@ img {
     }
   }
   #sidebar{
-    position: relative;
-    @media(orientation:landscape){
-      width: 25%;
-    }    
+    position: relative;    
   }
 }
 
