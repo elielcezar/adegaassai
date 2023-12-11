@@ -38,8 +38,7 @@
                     </ul>
                 </div>
                 <div class="col-4">
-                    <ul>                        
-                        <li><a href="<?php echo site_url(); ?>/indicacao-do-sommelier/">Indicação do <strong>Sommelier</strong></a></li>
+                    <ul>                                                
                         <li><a href="<?php echo site_url(); ?>/vitrine-do-fornecedor/">Vitrine do <strong>Fornecedor</strong></a></li>
                     </ul>
                 </div>

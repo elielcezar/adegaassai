@@ -131,11 +131,11 @@ Template Name: Homepage Custom
     </a-->
 
       
-    <div id="video">          
+    <!--div id="video">          
           <a data-fancybox data-width="640" data-height="360" href="https://megamidiagroup.com.br/adegaassai/wp-content/themes/tema-principal/img/vinhos-salton.mp4">
         <img class="card-img-top img-fluid" src="https://megamidiagroup.com.br/adegaassai/wp-content/themes/tema-principal/img/video.jpg" />
       </a>
-      </div>
+      </div-->
 
 
       <?php

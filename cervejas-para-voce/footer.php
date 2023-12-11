@@ -33,14 +33,12 @@
                 <p>A plataforma Adega Assaí é uma iniciativa do Assaí Atacadista.</p>
                 </div>
                 <div class="col-3">
-                    <ul class="select">
-                        <li><a href="https://megamidiagroup.com.br/adegaassai/destilados-para-voce/">Para você</a></li>
+                    <ul class="select">                        
                         <li><a href="https://megamidiagroup.com.br/adegaassai/destilados-para-seu-negocio/" class="active">Para seu negócio</a></li>
                     </ul>
                 </div>
                 <div class="col-4">
-                    <ul>                        
-                        <li><a href="<?php echo site_url(); ?>/selecao-assai/">Seleção<strong>Assaí</strong></a></li>
+                    <ul>                                                
                         <li><a href="<?php echo site_url(); ?>/vitrine-do-fornecedor/">Vitrine do <strong>Fornecedor</strong></a></li>
                     </ul>
                 </div>
